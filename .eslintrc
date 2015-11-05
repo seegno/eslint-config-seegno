@@ -153,6 +153,7 @@ rules:
   no-dupe-class-members: 2
   no-this-before-super: 2
   no-var: 2
+  object-shorthand: 2
   prefer-const: 2
   require-yield: 2
 
