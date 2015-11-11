@@ -129,7 +129,7 @@ rules:
   # Stylistic issues
   computed-property-spacing: 2
   consistent-this: 2
-  func-style: 2
+  func-style: [2, declaration, { allowArrowFunctions: true }]
   id-length: [2, { exceptions: [_, e, i] }]
   max-nested-callbacks: [2, 4]
   new-parens: 2
