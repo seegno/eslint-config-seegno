@@ -7,6 +7,9 @@ extends: 'eslint:recommended'
 
 parser: 'babel-eslint'
 
+plugins:
+  - babel
+
 root: true
 
 rules:
@@ -145,7 +148,6 @@ rules:
   wrap-regex: 2
 
   # ECMAScript 6
-  arrow-parens: [2, as-needed]
   arrow-spacing: 2
   constructor-super: 2
   generator-star-spacing: 2
@@ -161,6 +163,9 @@ rules:
   prefer-spread: 2
   prefer-template: 2
   require-yield: 2
+
+  # Babel plugin
+  babel/arrow-parens: [2, as-needed]
 
   # Legacy
   max-depth: 2
