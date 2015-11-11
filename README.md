@@ -13,7 +13,7 @@ $ npm install eslint babel-eslint eslint-plugin-babel eslint-config-seegno --sav
 Create an `.eslintrc` file with the following:
 
 ```yaml
-extends: 'eslint-config-seegno'
+extends: seegno
 ```
 
 Add the following `script` to your `package.json`:
