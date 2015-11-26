@@ -165,7 +165,7 @@ rules:
   require-yield: 2
 
   # Babel plugin
-  babel/arrow-parens: [2, as-needed]
+  babel/arrow-parens: [2, always]
   babel/generator-star-spacing: [2, after]
 
   # Legacy
