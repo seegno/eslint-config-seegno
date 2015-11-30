@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/seegno/eslint-config-seegno/tree/1.2.0) (2015-11-30)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.1...1.2.0)
+
+**Closed issues:**
+
+- Remove `no-ternary` rule [\#12](https://github.com/seegno/eslint-config-seegno/issues/12)
+- Require parenthesis for arrow functions [\#6](https://github.com/seegno/eslint-config-seegno/issues/6)
+
+**Merged pull requests:**
+
+- Remove `no-ternary` rule [\#15](https://github.com/seegno/eslint-config-seegno/pull/15) ([ruiquelhas](https://github.com/ruiquelhas))
+- Update `arrow-parens` rule [\#14](https://github.com/seegno/eslint-config-seegno/pull/14) ([pgom](https://github.com/pgom))
+
 ## [1.1.1](https://github.com/seegno/eslint-config-seegno/tree/1.1.1) (2015-11-11)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.0...1.1.1)
 
