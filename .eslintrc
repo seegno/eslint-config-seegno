@@ -56,8 +56,8 @@ rules:
   prefer-template: 0
   quote-props: 0
   quotes: 0
-  semi-spacing: 0
-  semi: 0
+  semi-spacing: 2
+  semi: 2
   space-after-keywords: 0
   space-before-blocks: 0
   space-before-function-paren: 0
