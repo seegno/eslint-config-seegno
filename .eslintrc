@@ -52,8 +52,6 @@ rules:
   one-var: 0
   operator-linebreak: 0
   padded-blocks: 0
-  prefer-spread: 0
-  prefer-template: 0
   quote-props: 0
   quotes: 0
   semi-spacing: 0
