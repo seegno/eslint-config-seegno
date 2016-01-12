@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.1](https://github.com/seegno/eslint-config-seegno/tree/1.2.1) (2016-01-12)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.2.0...1.2.1)
+
+**Fixed bugs:**
+
+- Fix duplicate `prefer-spread` rule [\#21](https://github.com/seegno/eslint-config-seegno/issues/21)
+
+**Merged pull requests:**
+
+- Remove duplicated rules [\#22](https://github.com/seegno/eslint-config-seegno/pull/22) ([joaogranado](https://github.com/joaogranado))
+
 ## [1.2.0](https://github.com/seegno/eslint-config-seegno/tree/1.2.0) (2015-11-30)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.1...1.2.0)
 
