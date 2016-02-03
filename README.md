@@ -19,8 +19,10 @@ extends: seegno
 Add the following `script` to your `package.json`:
 
 ```json
-scripts: {
-  "lint": "eslint ."
+{
+  "scripts": {
+    "lint": "eslint ."
+  }
 }
 ```
 
