@@ -10,7 +10,7 @@ $ npm install eslint babel-eslint eslint-plugin-babel eslint-config-seegno --sav
 
 ## Usage
 
-Create an `.eslintrc` file with the following:
+Create an `.eslintrc.yml` file with the following:
 
 ```yaml
 extends: seegno
