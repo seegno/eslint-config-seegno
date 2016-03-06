@@ -27,7 +27,7 @@ module.exports = {
     'comma-dangle': 0,
     'comma-spacing': 0,
     'comma-style': 0,
-    complexity: [2, 6],
+    complexity: 0,
     'computed-property-spacing': 2,
     'consistent-return': 0,
     'consistent-this': 2,
