@@ -39,8 +39,8 @@ describe('eslint-config-seegno', () => {
 
   it('should override some of the inherited rules', () => {
     config.rules.should.be.an.Object().and.should.not.be.empty();
-    config.rules['comma-dangle'].should.equal(0);
+    config.rules['comma-dangle'].should.equal('off');
     config.rules['no-cond-assign'][1].should.equal('always');
-    config.rules['no-empty'].should.equal(0);
+    config.rules['no-empty'].should.equal('off');
   });
 });
