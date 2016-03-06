@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/seegno/eslint-config-seegno/tree/3.0.0) (2016-03-06)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/2.0.0...3.0.0)
+
+**Closed issues:**
+
+- Upgrade to eslint 2.x \(v2.2.0\) [\#23](https://github.com/seegno/eslint-config-seegno/issues/23)
+
+**Merged pull requests:**
+
+- Update rules to support eslint 2.x.x [\#27](https://github.com/seegno/eslint-config-seegno/pull/27) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [2.0.0](https://github.com/seegno/eslint-config-seegno/tree/2.0.0) (2016-02-03)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.2.1...2.0.0)
 
