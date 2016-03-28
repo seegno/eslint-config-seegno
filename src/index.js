@@ -81,6 +81,7 @@ module.exports = {
     'no-constant-condition': 'error',
     'no-div-regex': 'error',
     'no-dupe-class-members': 'error',
+    'no-duplicate-imports': 'error',
     'no-else-return': 'error',
     'no-empty-label': 'off',
     'no-empty': 'off',
