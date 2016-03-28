@@ -64,7 +64,7 @@ module.exports = {
     'linebreak-style': 0,
     'lines-around-comment': 0,
     'max-depth': 2,
-    'max-nested-callbacks': [2, 4],
+    'max-nested-callbacks': 0,
     'max-params': [2, 4],
     'new-cap': 0,
     'new-parens': 2,
