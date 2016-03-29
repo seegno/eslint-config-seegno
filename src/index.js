@@ -18,7 +18,7 @@ module.exports = {
     'array-bracket-spacing': 0,
     'arrow-parens': 0,
     'arrow-spacing': 2,
-    'babel/arrow-parens': [2, 'always'],
+    'babel/arrow-parens': [2, 'as-needed'],
     'babel/generator-star-spacing': [2, 'before'],
     'block-scoped-var': 2,
     'block-spacing': 0,
