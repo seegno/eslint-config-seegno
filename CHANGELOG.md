@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.1.0](https://github.com/seegno/eslint-config-seegno/tree/3.1.0) (2016-03-29)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/3.0.0...3.1.0)
+
+**Implemented enhancements:**
+
+- Disable max-nested-callbacks rule [\#24](https://github.com/seegno/eslint-config-seegno/issues/24)
+- Disallow duplicate imports [\#35](https://github.com/seegno/eslint-config-seegno/pull/35) ([ruimarinho](https://github.com/ruimarinho))
+- Use string for severity in config [\#30](https://github.com/seegno/eslint-config-seegno/pull/30) ([ruimarinho](https://github.com/ruimarinho))
+- Disable complexity rule [\#29](https://github.com/seegno/eslint-config-seegno/pull/29) ([ruimarinho](https://github.com/ruimarinho))
+- Disable max-nested-callbacks rule [\#28](https://github.com/seegno/eslint-config-seegno/pull/28) ([ruimarinho](https://github.com/ruimarinho))
+- Require arrow parentheses as needed [\#26](https://github.com/seegno/eslint-config-seegno/pull/26) ([ruimarinho](https://github.com/ruimarinho))
+
+**Fixed bugs:**
+
+- Dependency peer mismatch [\#33](https://github.com/seegno/eslint-config-seegno/issues/33)
+- Fix dependency peer mismatch [\#34](https://github.com/seegno/eslint-config-seegno/pull/34) ([ruiquelhas](https://github.com/ruiquelhas))
+
+**Closed issues:**
+
+- Disallow duplicate imports \(no-duplicate-imports\) [\#32](https://github.com/seegno/eslint-config-seegno/issues/32)
+
 ## [3.0.0](https://github.com/seegno/eslint-config-seegno/tree/3.0.0) (2016-03-06)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/2.0.0...3.0.0)
 
