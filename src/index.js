@@ -163,6 +163,11 @@ module.exports = {
     'space-infix-ops': 'off',
     'space-unary-ops': 'off',
     'spaced-comment': 'off',
+    'sort-imports': ['error', {
+      'ignoreCase': false,
+      'ignoreMemberSort': false,
+      'memberSyntaxSortOrder': ['none', 'all', 'single', 'multiple']
+    }],
     strict: 'off',
     'valid-jsdoc': 'error',
     'vars-on-top': 'error',
