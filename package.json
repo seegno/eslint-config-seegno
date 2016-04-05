@@ -2,31 +2,29 @@
   "name": "eslint-config-seegno",
   "version": "3.1.0",
   "description": "Seegno-flavored ESLint config",
-  "main": "src",
-  "options": {
-    "mocha": "--require should test"
-  },
-  "scripts": {
-    "changelog": "github_changelog_generator --header-label='# Changelog'",
-    "lint": "eslint --config src/index.js .",
-    "test": "mocha $npm_package_options_mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/seegno/eslint-config-seegno.git"
-  },
   "keywords": [
     "config",
     "eslint",
     "lint",
     "shared"
   ],
-  "author": "Seegno",
-  "license": "MIT",
+  "homepage": "https://github.com/seegno/eslint-config-seegno#readme",
   "bugs": {
     "url": "https://github.com/seegno/eslint-config-seegno/issues"
   },
-  "homepage": "https://github.com/seegno/eslint-config-seegno#readme",
+  "license": "MIT",
+  "author": "Seegno",
+  "main": "src",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/seegno/eslint-config-seegno.git"
+  },
+  "scripts": {
+    "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
+    "lint": "eslint --config src/index.js .",
+    "test": "mocha $npm_package_options_mocha",
+    "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
+  },
   "devDependencies": {
     "babel-eslint": "^6.0.0",
     "eslint": "^2.5.1",
@@ -37,5 +35,8 @@
   },
   "engines": {
     "node": ">=4"
+  },
+  "options": {
+    "mocha": "--require should test"
   }
 }

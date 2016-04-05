@@ -1,7 +1,7 @@
 # Changelog
 
-## [3.1.0](https://github.com/seegno/eslint-config-seegno/tree/3.1.0) (2016-03-29)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/3.0.0...3.1.0)
+## [v3.1.0](https://github.com/seegno/eslint-config-seegno/tree/v3.1.0) (2016-03-29)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v3.0.0...v3.1.0)
 
 **Implemented enhancements:**
 
@@ -21,8 +21,8 @@
 
 - Disallow duplicate imports \(no-duplicate-imports\) [\#32](https://github.com/seegno/eslint-config-seegno/issues/32)
 
-## [3.0.0](https://github.com/seegno/eslint-config-seegno/tree/3.0.0) (2016-03-06)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/2.0.0...3.0.0)
+## [v3.0.0](https://github.com/seegno/eslint-config-seegno/tree/v3.0.0) (2016-03-06)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v2.0.0...v3.0.0)
 
 **Closed issues:**
 
@@ -32,8 +32,8 @@
 
 - Update rules to support eslint 2.x.x [\#27](https://github.com/seegno/eslint-config-seegno/pull/27) ([ruiquelhas](https://github.com/ruiquelhas))
 
-## [2.0.0](https://github.com/seegno/eslint-config-seegno/tree/2.0.0) (2016-02-03)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.2.1...2.0.0)
+## [v2.0.0](https://github.com/seegno/eslint-config-seegno/tree/v2.0.0) (2016-02-03)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.2.1...v2.0.0)
 
 **Implemented enhancements:**
 
@@ -43,8 +43,8 @@
 
 - Remove `eslint` dependency [\#2](https://github.com/seegno/eslint-config-seegno/issues/2)
 
-## [1.2.1](https://github.com/seegno/eslint-config-seegno/tree/1.2.1) (2016-01-12)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.2.0...1.2.1)
+## [v1.2.1](https://github.com/seegno/eslint-config-seegno/tree/v1.2.1) (2016-01-12)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.2.0...v1.2.1)
 
 **Fixed bugs:**
 
@@ -54,8 +54,8 @@
 
 - Remove duplicated rules [\#22](https://github.com/seegno/eslint-config-seegno/pull/22) ([joaogranado](https://github.com/joaogranado))
 
-## [1.2.0](https://github.com/seegno/eslint-config-seegno/tree/1.2.0) (2015-11-30)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.1...1.2.0)
+## [v1.2.0](https://github.com/seegno/eslint-config-seegno/tree/v1.2.0) (2015-11-30)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.1.1...v1.2.0)
 
 **Closed issues:**
 
@@ -67,8 +67,8 @@
 - Remove `no-ternary` rule [\#15](https://github.com/seegno/eslint-config-seegno/pull/15) ([ruiquelhas](https://github.com/ruiquelhas))
 - Update `arrow-parens` rule [\#14](https://github.com/seegno/eslint-config-seegno/pull/14) ([pgom](https://github.com/pgom))
 
-## [1.1.1](https://github.com/seegno/eslint-config-seegno/tree/1.1.1) (2015-11-11)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.0...1.1.1)
+## [v1.1.1](https://github.com/seegno/eslint-config-seegno/tree/v1.1.1) (2015-11-11)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.1.0...v1.1.1)
 
 **Fixed bugs:**
 
@@ -83,14 +83,14 @@
 
 - Fix async generator-star issues [\#11](https://github.com/seegno/eslint-config-seegno/pull/11) ([ruiquelhas](https://github.com/ruiquelhas))
 
-## [1.1.0](https://github.com/seegno/eslint-config-seegno/tree/1.1.0) (2015-11-05)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.0.0...1.1.0)
+## [v1.1.0](https://github.com/seegno/eslint-config-seegno/tree/v1.1.0) (2015-11-05)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.0.0...v1.1.0)
 
 **Implemented enhancements:**
 
 - Add missing ES6 rules [\#5](https://github.com/seegno/eslint-config-seegno/pull/5) ([nunofgs](https://github.com/nunofgs))
 
-## [1.0.0](https://github.com/seegno/eslint-config-seegno/tree/1.0.0) (2015-11-02)
+## [v1.0.0](https://github.com/seegno/eslint-config-seegno/tree/v1.0.0) (2015-11-02)
 **Merged pull requests:**
 
 - Add first version [\#1](https://github.com/seegno/eslint-config-seegno/pull/1) ([ruiquelhas](https://github.com/ruiquelhas))
