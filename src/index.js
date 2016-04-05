@@ -11,7 +11,7 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   parser: 'babel-eslint',
-  plugins: ['babel'],
+  plugins: ['babel', 'sort-class-members'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -156,6 +156,18 @@ module.exports = {
     'require-yield': 'error',
     semi: 'off',
     'semi-spacing': 'off',
+    'sort-class-members/sort-class-members': ['error', {
+      order: [
+        'constructor',
+        '[static-methods]',
+        '[static-properties]',
+        '[properties]',
+        '[methods]',
+        '[conventional-private-properties]',
+        '[conventional-private-methods]',
+        '[everything-else]'
+      ],
+    }],
     'sort-vars': 'error',
     'space-before-blocks': 'off',
     'space-before-function-paren': 'off',
