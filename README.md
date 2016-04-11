@@ -5,7 +5,7 @@ Seegno-flavored ESLint config.
 ## Installation
 
 ```sh
-$ npm install eslint babel-eslint eslint-plugin-babel eslint-config-seegno --save-dev
+$ npm install eslint babel-eslint eslint-plugin-babel eslint-plugin-sort-class-members eslint-config-seegno --save-dev
 ```
 
 ## Usage
