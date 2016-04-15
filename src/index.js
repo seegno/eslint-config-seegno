@@ -46,7 +46,9 @@ module.exports = {
     'id-length': ['error', {
       exceptions: ['_', 'e', 'i']
     }],
-    indent: 'off',
+    indent: ['error', 2, {
+      SwitchCase: 1
+    }],
     'key-spacing': 'off',
     'keyword-spacing': ['off', {
       overrides: {
