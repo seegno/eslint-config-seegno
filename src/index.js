@@ -9,7 +9,7 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:sort-class-members/recommended'],
   parser: 'babel-eslint',
   plugins: ['babel', 'sort-class-members'],
   root: true,
@@ -158,18 +158,6 @@ module.exports = {
     'require-yield': 'error',
     semi: 'off',
     'semi-spacing': 'off',
-    'sort-class-members/sort-class-members': ['error', {
-      order: [
-        'constructor',
-        '[static-methods]',
-        '[static-properties]',
-        '[properties]',
-        '[methods]',
-        '[conventional-private-properties]',
-        '[conventional-private-methods]',
-        '[everything-else]'
-      ],
-    }],
     'sort-vars': 'error',
     'space-before-blocks': 'off',
     'space-before-function-paren': 'off',
