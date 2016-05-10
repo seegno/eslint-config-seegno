@@ -24,12 +24,13 @@ describe('eslint-config-seegno', () => {
     config.env.node.should.be.true();
   });
 
-  it('should extend `eslint:recommended`', () => {
-    config.extends.should.equal('eslint:recommended');
+  it('should extend `eslint:recommended` and `plugin:sort-class-members/recommended`', () => {
+    config.extends.should.be.an.Array().and.should.not.be.empty();
+    config.extends[0].should.equal('eslint:recommended');
+    config.extends[1].should.equal('plugin:sort-class-members/recommended');
   });
 
   it('should use `babel-eslint` as parser', () => {
-
     config.parser.should.equal('babel-eslint');
   });
 
