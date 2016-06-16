@@ -25,13 +25,15 @@
     "test": "mocha $npm_package_options_mocha",
     "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
   },
+  "dependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-sort-class-members": "^1.0.1"
+  },
   "devDependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint": "^2.5.1",
-    "eslint-plugin-babel": "^3.1.0",
-    "eslint-plugin-sort-class-members": "^1.0.0",
-    "mocha": "^2.4.5",
-    "should": "^8.3.0"
+    "eslint": "^3.0.1",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
   },
   "engines": {
     "node": ">=4"
