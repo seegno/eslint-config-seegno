@@ -4,44 +4,79 @@
  * Module dependencies.
  */
 
-const config = require('../src');
+const Linter = require('eslint/lib/cli-engine');
+const path = require('path');
 
 /**
  * Tests for `eslint-config-seegno`.
  */
 
 describe('eslint-config-seegno', () => {
-  it('should load a valid config file', () => {
-    config.should.be.an.Object().and.should.not.be.empty();
-    config.should.containEql(['env', 'extends', 'parser', 'root', 'rules']);
+  const linter = new Linter({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
+
+  it('should not generate any violation for correct code', () => {
+    const source = path.join(__dirname, 'fixtures', 'correct.js');
+
+    linter.executeOnFiles([source]).errorCount.should.equal(0);
   });
 
-  it('should define the proper environment', () => {
-    config.env.should.be.an.Object().and.should.not.be.empty();
-    config.env.should.containEql(['es6', 'mocha', 'node']);
-    config.env.es6.should.be.true();
-    config.env.mocha.should.be.true();
-    config.env.node.should.be.true();
+  it('should generate violations for environment-specific rules', () => {
+    const source = path.join(__dirname, 'fixtures', 'environment.js');
+
+    linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId).should.containDeep([
+      'eol-last',
+      'linebreak-style',
+      'no-mixed-spaces-and-tabs'
+    ]);
   });
 
-  it('should extend `eslint:recommended` and `plugin:sort-class-members/recommended`', () => {
-    config.extends.should.be.an.Array().and.should.not.be.empty();
-    config.extends[0].should.equal('eslint:recommended');
-    config.extends[1].should.equal('plugin:sort-class-members/recommended');
-  });
+  it('should generate violations for incorrect code', () => {
+    const source = path.join(__dirname, 'fixtures', 'incorrect.js');
 
-  it('should use `babel-eslint` as parser', () => {
-    config.parser.should.equal('babel-eslint');
-  });
-
-  it('should limit the eslint scope to the project only', () => {
-    config.root.should.be.true();
-  });
-
-  it('should override some of the inherited rules', () => {
-    config.rules.should.be.an.Object().and.should.not.be.empty();
-    config.rules['comma-dangle'].should.equal('off');
-    config.rules['no-cond-assign'][1].should.equal('always');
-    config.rules['no-empty'].should.equal('off');
+    linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId).should.containDeep([
+      'array-bracket-spacing',
+      'comma-dangle',
+      'comma-spacing',
+      'comma-style',
+      'consistent-this',
+      'curly',
+      'dot-notation',
+      'id-match',
+      'key-spacing',
+      'keyword-spacing',
+      'mocha/no-exclusive-tests',
+      'new-cap',
+      'no-class-assign',
+      'no-const-assign',
+      'no-constant-condition',
+      'no-dupe-class-members',
+      'no-empty',
+      'no-labels',
+      'no-multi-spaces',
+      'no-multi-str',
+      'no-multiple-empty-lines',
+      'no-spaced-func',
+      'no-this-before-super',
+      'no-underscore-dangle',
+      'object-curly-spacing',
+      'one-var',
+      'operator-linebreak',
+      'padded-blocks',
+      'quote-props',
+      'quotes',
+      'semi',
+      'semi-spacing',
+      'sort-imports',
+      'sorting/sort-object-props',
+      'space-before-blocks',
+      'space-before-function-paren',
+      'space-in-parens',
+      'space-infix-ops',
+      'space-unary-ops',
+      'spaced-comment',
+      'template-curly-spacing',
+      'wrap-iife',
+      'yoda'
+    ]);
   });
 });
