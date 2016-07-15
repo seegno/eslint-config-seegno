@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.0.0](https://github.com/seegno/eslint-config-seegno/tree/v5.0.0) (2016-07-15)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v4.0.0...v5.0.0)
+
+**Merged pull requests:**
+
+- Enable JSCS compatible rules [\#45](https://github.com/seegno/eslint-config-seegno/pull/45) ([ruiquelhas](https://github.com/ruiquelhas))
+- Add recommended configuration of sort-class-members plugin [\#44](https://github.com/seegno/eslint-config-seegno/pull/44) ([joaogranado](https://github.com/joaogranado))
+- Update README.md to add missing dependency [\#39](https://github.com/seegno/eslint-config-seegno/pull/39) ([pgom](https://github.com/pgom))
+- Add indentation validation [\#38](https://github.com/seegno/eslint-config-seegno/pull/38) ([promag](https://github.com/promag))
+
 ## [v4.0.0](https://github.com/seegno/eslint-config-seegno/tree/v4.0.0) (2016-04-05)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v3.1.0...v4.0.0)
 
