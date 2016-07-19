@@ -128,7 +128,7 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-var': 'error',
     'no-void': 'error',
-    'no-warning-comments': 'error',
+    'no-warning-comments': 'off',
     'no-with': 'error',
     'object-curly-spacing': ['error', 'always'],
     'object-shorthand': 'error',
