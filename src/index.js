@@ -45,7 +45,9 @@ module.exports = {
     'id-length': ['error', {
       exceptions: ['_', 'e', 'i']
     }],
-    'id-match': ['error', '^_$|^[a-zA-Z][a-zA-Z0-9]*$|^[A-Z][_A-Z0-9]+[A-Z0-9]$'],
+    'id-match': ['error', '^_$|^[a-zA-Z][a-zA-Z0-9]*$|^[A-Z][_A-Z0-9]+[A-Z0-9]$', {
+      onlyDeclarations: true
+    }],
     indent: ['error', 2, {
       SwitchCase: 1
     }],

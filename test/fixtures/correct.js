@@ -44,6 +44,8 @@ noop(IDMatch);
 noop(IDMATCH);
 noop(ID_MATCH);
 noop(ID_M_ATCH);
+noop(__dirname);
+noop(`${__dirname}`);
 
 // `key-spacing`.
 noop({ foo: 'bar' });
