@@ -121,15 +121,6 @@ class Child extends NoThisBeforeSuper {
 
 noop(Child);
 
-// `no-underscore-dangle`.
-class NoUnderscoreDangle {
-  constructor() {
-    this._foo = 'bar';
-  }
-}
-
-noop(NoUnderscoreDangle);
-
 // `no-warning-comments`.
 
 // TODO: do something.

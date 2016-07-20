@@ -46,7 +46,8 @@ module.exports = {
       exceptions: ['_', 'e', 'i']
     }],
     'id-match': ['error', '^_$|^[a-zA-Z][a-zA-Z0-9]*$|^[A-Z][_A-Z0-9]+[A-Z0-9]$', {
-      onlyDeclarations: true
+      onlyDeclarations: true,
+      properties: true
     }],
     indent: ['error', 2, {
       SwitchCase: 1
@@ -119,9 +120,7 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'off',
-    'no-underscore-dangle': ['error', {
-      allowAfterThis: true
-    }],
+    'no-underscore-dangle': 'error',
     'no-unexpected-multiline': 'error',
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': 'error',
