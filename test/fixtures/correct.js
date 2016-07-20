@@ -128,6 +128,11 @@ class NoUnderscoreDangle {
 
 noop(NoUnderscoreDangle);
 
+// `no-warning-comments`.
+
+// TODO: do something.
+// FIXME: this is not a good idea.
+
 // `object-curly-spacing`.
 const objectCurlySpacing1 = { foo: 'bar' };
 const objectCurlySpacing2 = {};
