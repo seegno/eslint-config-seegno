@@ -1,5 +1,14 @@
 # Changelog
 
+## [v6.0.0](https://github.com/seegno/eslint-config-seegno/tree/v6.0.0) (2016-07-20)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v5.0.0...v6.0.0)
+
+**Merged pull requests:**
+
+- Update rules to disallow any dangling underscore [\#51](https://github.com/seegno/eslint-config-seegno/pull/51) ([ruiquelhas](https://github.com/ruiquelhas))
+- Update `id-match` to validate declarations only [\#49](https://github.com/seegno/eslint-config-seegno/pull/49) ([ruiquelhas](https://github.com/ruiquelhas))
+- Disable warning comment errors [\#47](https://github.com/seegno/eslint-config-seegno/pull/47) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v5.0.0](https://github.com/seegno/eslint-config-seegno/tree/v5.0.0) (2016-07-15)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v4.0.0...v5.0.0)
 
