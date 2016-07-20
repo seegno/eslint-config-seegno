@@ -131,11 +131,20 @@ class Child extends NoThisBeforeSuper {
 noop(Child);
 
 // `no-underscore-dangle`.
-const noUnderscoreDangle = {};
+class NoUnderscoreDangle {
+  constructor() {
+    this._foo = 'bar';
+  }
+}
 
-noUnderscoreDangle._foo = 'bar';
+const noUnderscoreDangle1 = { _foo: 'bar' };
+const noUnderscoreDangle2 = {};
+
+noUnderscoreDangle2._foo = 'bar';
 
 noop(NoUnderscoreDangle);
+noop(noUnderscoreDangle1);
+noop(noUnderscoreDangle2);
 
 // `object-curly-spacing`.
 const objectCurlySpacing = {foo: 'bar'};
