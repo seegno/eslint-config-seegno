@@ -49,6 +49,12 @@ if(keywordSpacing) {
   keywordSpacing = false;
 }
 
+// `lines-around-comment`
+
+noop();
+// Comment.
+noop();
+
 // `mocha/no-exclusive-tests`.
 describe.only('noExclusiveTests', () => {
   it('should not work');

@@ -52,7 +52,10 @@ module.exports = {
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     'linebreak-style': 'error',
-    'lines-around-comment': 'off',
+    'lines-around-comment': ['error', {
+      'allowBlockStart': true,
+      'beforeLineComment': true
+    }],
     'max-depth': 'error',
     'max-nested-callbacks': 'off',
     'max-params': ['error', 4],

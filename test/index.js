@@ -44,6 +44,7 @@ describe('eslint-config-seegno', () => {
       'id-match',
       'key-spacing',
       'keyword-spacing',
+      'lines-around-comment',
       'mocha/no-exclusive-tests',
       'new-cap',
       'no-class-assign',
