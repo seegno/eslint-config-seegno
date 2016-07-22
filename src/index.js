@@ -59,7 +59,7 @@ module.exports = {
     'mocha/no-exclusive-tests': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
-    'newline-after-var': 'off',
+    'newline-after-var': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',

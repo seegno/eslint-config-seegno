@@ -59,6 +59,11 @@ const newCap = new Cap();
 
 noop(newCap);
 
+// `newline-after-var`.
+const newLineAfterVar = 'foo';
+
+noop(newLineAfterVar);
+
 // `no-class-assign`.
 class NoClassAssign { }
 

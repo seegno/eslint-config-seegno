@@ -58,6 +58,10 @@ describe.only('noExclusiveTests', () => {
 const cap = require('cap');
 const newCap = new cap();
 
+// `newline-after-var`.
+const newLineAfterVar = 'foo';
+noop(newLineAfterVar);
+
 // `no-class-assign`.
 class NoClassAssign { }
 
