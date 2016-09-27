@@ -152,7 +152,7 @@ const objectCurlySpacing2 = {};
 noop(objectCurlySpacing1);
 noop(objectCurlySpacing2);
 
-// `one-var`.
+// `one-var`, `one-var-declaration-per-line`.
 const oneVar1 = 'foo';
 const oneVar2 = 'bar';
 

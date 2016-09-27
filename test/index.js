@@ -62,6 +62,7 @@ describe('eslint-config-seegno', () => {
       'no-underscore-dangle',
       'object-curly-spacing',
       'one-var',
+      'one-var-declaration-per-line',
       'operator-linebreak',
       'padded-blocks',
       'quote-props',

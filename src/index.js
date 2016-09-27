@@ -136,6 +136,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
+    'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': 'error',
     'operator-linebreak': ['error', 'none'],
     'padded-blocks': ['error', 'never'],
