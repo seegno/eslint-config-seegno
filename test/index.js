@@ -77,6 +77,7 @@ describe('eslint-config-seegno', () => {
       'space-infix-ops',
       'space-unary-ops',
       'spaced-comment',
+      'sql-template/no-unsafe-query',
       'template-curly-spacing',
       'wrap-iife',
       'yoda'

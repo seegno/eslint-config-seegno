@@ -11,7 +11,7 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'plugin:sort-class-members/recommended'],
   parser: 'babel-eslint',
-  plugins: ['babel', 'mocha', 'sort-class-members', 'sorting'],
+  plugins: ['babel', 'mocha', 'sort-class-members', 'sorting', 'sql-template'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -164,6 +164,7 @@ module.exports = {
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
     'spaced-comment': 'error',
+    'sql-template/no-unsafe-query': 'error',
     strict: 'off',
     'template-curly-spacing': 'error',
     'valid-jsdoc': 'error',
