@@ -35,6 +35,7 @@ describe('eslint-config-seegno', () => {
 
     linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId).should.containDeep([
       'array-bracket-spacing',
+      'brace-style',
       'comma-dangle',
       'comma-spacing',
       'comma-style',

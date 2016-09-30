@@ -6,6 +6,15 @@ function noop() {
 // `array-bracket-spacing`, `comma-spacing` and `no-multi-spaces`.
 noop(['bar', 'foo']);
 
+// `brace-style`.
+try {
+  noop();
+} catch (e) {
+  noop();
+}
+
+noop(function *() { return yield noop(); });
+
 // `comma-dangle`, `comma-style`.
 noop({ bar: 'foo', foo: 'bar' });
 
@@ -87,8 +96,13 @@ if (noConstantCondition) {
 
 // `no-dupe-class-members`.
 class NoDupeClassMembers {
-  bar() { return 'bar'; }
-  foo() { return 'foo'; }
+  bar() {
+    return 'bar';
+  }
+
+  foo() {
+    return 'foo';
+  }
 }
 
 noop(NoDupeClassMembers);

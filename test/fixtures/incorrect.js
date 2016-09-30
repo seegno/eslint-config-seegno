@@ -6,6 +6,14 @@ function noop() {
 // `array-bracket-spacing`.
 noop([ 'bar', 'foo']);
 
+// `brace-style`.
+try {
+  noop();
+}
+catch (e) {
+  noop();
+}
+
 // `comma-dangle`.
 noop({ bar: 'foo', foo: 'bar', });
 
@@ -81,8 +89,13 @@ if (true) {
 
 // `no-dupe-class-members`.
 class NoDupeClassMembers {
-  foo() { return 'bar'; }
-  foo() { return 'foo'; }
+  foo() {
+    return 'bar';
+  }
+
+  foo() {
+    return 'foo';
+  }
 }
 
 noop(NoDupeClassMembers);

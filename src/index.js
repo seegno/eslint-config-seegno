@@ -22,7 +22,9 @@ module.exports = {
     'babel/generator-star-spacing': ['error', 'before'],
     'block-scoped-var': 'error',
     'block-spacing': 'off',
-    'brace-style': 'off',
+    'brace-style': ['error', '1tbs', {
+      allowSingleLine: true
+    }],
     camelcase: 'off',
     'comma-dangle': 'error',
     'comma-spacing': 'error',
