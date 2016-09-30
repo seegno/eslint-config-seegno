@@ -174,6 +174,12 @@ const oneVar1 = 'foo', oneVar2 = 'bar';
 noop(oneVar1);
 noop(oneVar2);
 
+// `one-var-declaration-per-line`.
+const oneVar1 = 'foo'; const oneVar2 = 'bar';
+
+noop(oneVar1);
+noop(oneVar2);
+
 // `operator-linebreak`.
 const operatorLineBreak = 1 +
   2;
