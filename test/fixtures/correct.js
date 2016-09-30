@@ -6,7 +6,7 @@ function noop() {
 // `array-bracket-spacing`, `comma-spacing` and `no-multi-spaces`.
 noop(['bar', 'foo']);
 
-// `comma-dangle`, `comma-style` and `sorting/sort-object-props`.
+// `comma-dangle`, `comma-style`.
 noop({ bar: 'foo', foo: 'bar' });
 
 // `consistent-this`.
@@ -194,6 +194,17 @@ noop(sortImport2);
 noop(sortImport3);
 noop(sortImport4);
 noop(sortImport5);
+
+// `sorting/sort-object-props`.
+const sortObjectProps1 = 'foo';
+const sortObjectProps2 = 'bar';
+
+const sortObjectProps = {
+  [`${sortObjectProps1}`]: 'foo',
+  [`${sortObjectProps2}`]: 'bar'
+};
+
+noop(sortObjectProps);
 
 // `space-before-function-paren`.
 (function() {

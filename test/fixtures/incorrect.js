@@ -209,7 +209,15 @@ noop(sortImport2);
 noop(sortImport3);
 
 // `sorting/sort-object-props`.
-noop({ foo: 'bar', bar: 'foo' });
+const sortObjectProps1 = 'foo';
+const sortObjectProps2 = 'bar';
+
+const sortObjectProps = {
+  [`${sortObjectProps2}`]: 'bar',
+  [`${sortObjectProps1}`]: 'foo'
+};
+
+noop(sortObjectProps);
 
 // `space-before-blocks`.
 let spaceBeforeBlocks = true;
