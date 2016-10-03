@@ -1,5 +1,16 @@
 # Changelog
 
+## [v7.0.0](https://github.com/seegno/eslint-config-seegno/tree/v7.0.0) (2016-10-03)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v6.0.0...v7.0.0)
+
+**Merged pull requests:**
+
+- Add sql template plugin and `sql-template/no-unsafe-query` rule [\#61](https://github.com/seegno/eslint-config-seegno/pull/61) ([rplopes](https://github.com/rplopes))
+- Add `one-var-declaration-per-line` rule [\#60](https://github.com/seegno/eslint-config-seegno/pull/60) ([rplopes](https://github.com/rplopes))
+- Add `brace-style` rule [\#59](https://github.com/seegno/eslint-config-seegno/pull/59) ([rplopes](https://github.com/rplopes))
+- Fix computed property template string sorting issue [\#58](https://github.com/seegno/eslint-config-seegno/pull/58) ([ruiquelhas](https://github.com/ruiquelhas))
+- Enable `newline-after-var` rule [\#56](https://github.com/seegno/eslint-config-seegno/pull/56) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v6.0.0](https://github.com/seegno/eslint-config-seegno/tree/v6.0.0) (2016-07-20)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v5.0.0...v6.0.0)
 
