@@ -242,6 +242,16 @@ noop(spaceUnaryOps2);
 // `spaced-comment`.
 // spaced comment.
 
+// `sql-template/no-unsafe-query`.
+const db = {
+  query: noop()
+};
+const foo = 'foo';
+const sql = 'sql-tag';
+
+db.query(sql`SELECT ${foo} FROM bar`);
+db.query(`SELECT foo FROM bar`);
+
 // `template-curly-spacing`.
 const templateCurlySpacing = 'foo';
 
