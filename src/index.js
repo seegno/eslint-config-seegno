@@ -11,7 +11,7 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'plugin:sort-class-members/recommended'],
   parser: 'babel-eslint',
-  plugins: ['babel', 'mocha', 'sort-class-members', 'sorting', 'sql-template'],
+  plugins: ['babel', 'mocha', 'sort-class-members', 'sort-imports-es6', 'sorting', 'sql-template'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -152,10 +152,10 @@ module.exports = {
     'require-yield': 'error',
     semi: 'error',
     'semi-spacing': 'error',
-    'sort-imports': ['error', {
+    'sort-imports-es6/sort-imports-es6': ['error', {
       ignoreCase: false,
       ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
+      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
     }],
     'sorting/sort-object-props': 'error',
     'space-before-blocks': 'error',
