@@ -1,5 +1,14 @@
 # Changelog
 
+## [v8.0.0](https://github.com/seegno/eslint-config-seegno/tree/v8.0.0) (2016-10-12)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v7.0.0...v8.0.0)
+
+**Merged pull requests:**
+
+- Update sort-imports rule [\#64](https://github.com/seegno/eslint-config-seegno/pull/64) ([ricardogama](https://github.com/ricardogama))
+- Update mocha@3.1.1 [\#63](https://github.com/seegno/eslint-config-seegno/pull/63) ([rplopes](https://github.com/rplopes))
+- Add .npmignore for smaller builds [\#62](https://github.com/seegno/eslint-config-seegno/pull/62) ([ruimarinho](https://github.com/ruimarinho))
+
 ## [v7.0.0](https://github.com/seegno/eslint-config-seegno/tree/v7.0.0) (2016-10-03)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v6.0.0...v7.0.0)
 
