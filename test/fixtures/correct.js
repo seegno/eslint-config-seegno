@@ -198,16 +198,19 @@ for (let semiSpacing = 0; semiSpacing < 10; ++semiSpacing) {
 }
 
 // `sort-imports`.
-import SortImport1 from 'sort-import1';
-import { sortImport2 } from 'sort-import2';
-import sortImport4 from 'sort-import4';
-import { sortImport3, sortImport5 } from 'sort-import';
+import 'import-1';
+import * as Import6 from 'import-2';
+import { Import5, import4 } from 'import-3';
+import { import3 } from 'import-4';
+import Import2 from 'import-5';
+import import1 from 'import-6';
 
-noop(SortImport1);
-noop(sortImport2);
-noop(sortImport3);
-noop(sortImport4);
-noop(sortImport5);
+noop(Import2);
+noop(Import5);
+noop(Import6);
+noop(import1);
+noop(import3);
+noop(import4);
 
 // `sorting/sort-object-props`.
 const sortObjectProps1 = 'foo';

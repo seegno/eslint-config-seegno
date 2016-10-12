@@ -220,12 +220,11 @@ for (let semiSpacing = 0;semiSpacing < 10;++semiSpacing) {
 }
 
 // `sort-imports`.
-import { sortImport2, sortImport3 } from 'sort-import';
-import { sortImport1 } from 'sort-import1';
+import import1 from 'import-1';
+import { import2 } from 'import-2';
 
-noop(sortImport1);
-noop(sortImport2);
-noop(sortImport3);
+noop(import1);
+noop(import2);
 
 // `sorting/sort-object-props`.
 const sortObjectProps1 = 'foo';
