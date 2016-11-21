@@ -11,15 +11,13 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'plugin:sort-class-members/recommended'],
   parser: 'babel-eslint',
-  plugins: ['babel', 'mocha', 'sort-class-members', 'sort-imports-es6', 'sorting', 'sql-template'],
+  plugins: ['mocha', 'sort-class-members', 'sort-imports-es6', 'sorting', 'sql-template'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
     'array-bracket-spacing': 'error',
-    'arrow-parens': 'off',
+    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',
-    'babel/arrow-parens': ['error', 'as-needed'],
-    'babel/generator-star-spacing': ['error', 'before'],
     'block-scoped-var': 'error',
     'block-spacing': 'off',
     'brace-style': ['error', '1tbs', {
@@ -43,7 +41,7 @@ module.exports = {
     'func-style': ['error', 'declaration', {
       allowArrowFunctions: true
     }],
-    'generator-star-spacing': 'off',
+    'generator-star-spacing': ['error', 'before'],
     'id-length': ['error', {
       exceptions: ['_', 'e', 'i']
     }],
