@@ -42,6 +42,11 @@ const dotNotation = {};
 
 dotNotation.foo = 'bar';
 
+// `generator-star-spacing`
+noop(function *() {});
+noop(function *foo() {});
+noop({ *foo() {} });
+
 // `id-match`.
 let idmatch;
 let idMatch;
