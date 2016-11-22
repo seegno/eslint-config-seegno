@@ -6,6 +6,9 @@ function noop() {
 // `array-bracket-spacing`.
 noop([ 'bar', 'foo']);
 
+// `arrow-parens`
+noop((foo) => {});
+
 // `brace-style`.
 try {
   noop();
@@ -41,6 +44,11 @@ if (curly)
 const dotNotation = {};
 
 dotNotation['foo'] = 'bar';
+
+// `generator-star-spacing`
+noop(function* () {});
+noop(function* foo() {});
+noop({ * foo() {} });
 
 // `id-match`.
 let id_match;

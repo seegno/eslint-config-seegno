@@ -6,6 +6,11 @@ function noop() {
 // `array-bracket-spacing`, `comma-spacing` and `no-multi-spaces`.
 noop(['bar', 'foo']);
 
+// `arrow-parens`
+noop(() => 'bar');
+noop(foo => foo);
+noop((foo, bar) => [foo, bar]);
+
 // `brace-style`.
 try {
   noop();
@@ -36,6 +41,11 @@ if (mixedRules) {
 const dotNotation = {};
 
 dotNotation.foo = 'bar';
+
+// `generator-star-spacing`
+noop(function *() {});
+noop(function *foo() {});
+noop({ *foo() {} });
 
 // `id-match`.
 let idmatch;
