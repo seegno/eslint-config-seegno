@@ -1,5 +1,12 @@
 # Changelog
 
+## [v8.0.1](https://github.com/seegno/eslint-config-seegno/tree/v8.0.1) (2016-11-22)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v8.0.0...v8.0.1)
+
+**Merged pull requests:**
+
+- Remove eslint-plugin-babel [\#66](https://github.com/seegno/eslint-config-seegno/pull/66) ([kurayama](https://github.com/kurayama))
+
 ## [v8.0.0](https://github.com/seegno/eslint-config-seegno/tree/v8.0.0) (2016-10-12)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v7.0.0...v8.0.0)
 
