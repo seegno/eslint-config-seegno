@@ -6,6 +6,11 @@ function noop() {
 // `array-bracket-spacing`, `comma-spacing` and `no-multi-spaces`.
 noop(['bar', 'foo']);
 
+// `arrow-parens`
+noop(() => 'bar');
+noop(foo => foo);
+noop((foo, bar) => [foo, bar]);
+
 // `brace-style`.
 try {
   noop();
