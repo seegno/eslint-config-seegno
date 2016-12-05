@@ -36,6 +36,7 @@ describe('eslint-config-seegno', () => {
       'array-bracket-spacing',
       'arrow-parens',
       'brace-style',
+      'capitalized-comments',
       'comma-dangle',
       'comma-spacing',
       'comma-style',
