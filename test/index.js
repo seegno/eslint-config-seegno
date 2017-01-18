@@ -48,6 +48,7 @@ describe('eslint-config-seegno', () => {
       'mocha/no-exclusive-tests',
       'new-cap',
       'newline-after-var',
+      'newline-before-return',
       'no-class-assign',
       'no-const-assign',
       'no-constant-condition',

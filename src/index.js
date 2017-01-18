@@ -63,6 +63,7 @@ module.exports = {
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-after-var': 'error',
+    'newline-before-return': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',

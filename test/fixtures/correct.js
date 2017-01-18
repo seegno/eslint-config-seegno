@@ -85,6 +85,17 @@ const newLineAfterVar = 'foo';
 
 noop(newLineAfterVar);
 
+// `newline-before-return`.
+function funcThatReturns(bar) {
+  if (!bar) {
+    return;
+  }
+
+  return bar;
+}
+
+funcThatReturns('foo');
+
 // `no-class-assign`.
 class NoClassAssign { }
 
