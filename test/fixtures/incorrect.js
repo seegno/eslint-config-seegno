@@ -244,13 +244,11 @@ import { import2 } from 'import-2';
 noop(import1);
 noop(import2);
 
-// `sorting/sort-object-props`.
-const sortObjectProps1 = 'foo';
-const sortObjectProps2 = 'bar';
-
+// `sort-keys`.
 const sortObjectProps = {
-  [`${sortObjectProps2}`]: 'bar',
-  [`${sortObjectProps1}`]: 'foo'
+  var1: 'foo',
+  var10: 'bar',
+  var9: 'biz'
 };
 
 noop(sortObjectProps);
