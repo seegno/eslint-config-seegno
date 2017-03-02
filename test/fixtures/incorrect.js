@@ -7,7 +7,7 @@ function noop() {
 noop([ 'bar', 'foo']);
 
 // `arrow-parens`
-noop((foo) => {});
+noop((foo) => noop(foo));
 
 // `brace-style`.
 try {
@@ -25,7 +25,7 @@ noop(['bar','foo']);
 
 // `comma-style`.
 noop({
-    bar: 'foo'
+  bar: 'foo'
   , foo: 'bar'
 });
 
@@ -38,7 +38,7 @@ noop(consistentThis);
 let curly = true;
 
 if (curly)
-  curly = false
+  curly = false;
 
 // `dot-notation`.
 const dotNotation = {};
@@ -54,6 +54,11 @@ noop({ * foo() {} });
 let id_match;
 
 noop(id_match);
+
+// `indent`.
+noop({
+    bar: 'foo'
+});
 
 // `key-spacing`.
 noop({ foo:'bar' });
@@ -72,7 +77,8 @@ describe.only('noExclusiveTests', () => {
 
 // `new-cap`.
 const cap = require('cap');
-const newCap = new cap();
+
+new cap();
 
 // `newline-after-var`.
 const newLineAfterVar = 'foo';
@@ -100,6 +106,8 @@ const noConstAssign = true;
 
 noConstAssign = false;
 
+noop(noConstAssign);
+
 // `no-constant-condition`.
 if (true) {
   noop(true);
@@ -124,16 +132,9 @@ try {
 } catch (e) {}
 
 // `no-labels`.
-noLabels:
-  while (noLabels) {
-    break noLabels;
-  }
-
-// `no-mixed-spaces-and-tabs`.
-const noMixedSpacesAndTabs = {
-  bar: 'foo',
-  foo: 'bar'
-};
+noLabels: {
+  break noLabels;
+}
 
 // `no-multi-spaces`.
 noop(['foo',  'bar']);
@@ -168,18 +169,14 @@ noop(Child);
 // `no-underscore-dangle`.
 class NoUnderscoreDangle {
   constructor() {
-    this._foo = 'bar';
+    this._foo();
   }
 }
 
-const noUnderscoreDangle1 = { _foo: 'bar' };
-const noUnderscoreDangle2 = {};
+noop(new NoUnderscoreDangle());
 
-noUnderscoreDangle2._foo = 'bar';
-
-noop(NoUnderscoreDangle);
-noop(noUnderscoreDangle1);
-noop(noUnderscoreDangle2);
+// `no-unused-vars`
+const foobar = '';
 
 // `object-curly-spacing`.
 const objectCurlySpacing = {foo: 'bar'};
@@ -193,10 +190,10 @@ noop(oneVar1);
 noop(oneVar2);
 
 // `one-var-declaration-per-line`.
-const oneVar1 = 'foo'; const oneVar2 = 'bar';
+const oneVarDeclarationPerLine1 = 'foo'; const oneVarDeclarationPerLine2 = 'bar';
 
-noop(oneVar1);
-noop(oneVar2);
+noop(oneVarDeclarationPerLine1);
+noop(oneVarDeclarationPerLine2);
 
 // `operator-linebreak`.
 const operatorLineBreak = 1 +
@@ -260,7 +257,7 @@ let spaceBeforeBlocks = true;
 
 if (spaceBeforeBlocks){
   spaceBeforeBlocks = false;
-}else{
+} else {
   spaceBeforeBlocks = true;
 }
 
