@@ -23,18 +23,18 @@ describe('eslint-config-seegno', () => {
   it('should generate violations for environment-specific rules', () => {
     const source = path.join(__dirname, 'fixtures', 'environment.js');
 
-    linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId).should.containDeep([
-      'eol-last',
+    Array.from(new Set(linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId))).should.eql([
       'linebreak-style',
-      'no-mixed-spaces-and-tabs'
+      'eol-last'
     ]);
   });
 
   it('should generate violations for incorrect code', () => {
     const source = path.join(__dirname, 'fixtures', 'incorrect.js');
 
-    linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId).should.containDeep([
+    Array.from(new Set(linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId))).should.eql([
       'array-bracket-spacing',
+      'arrow-parens',
       'brace-style',
       'comma-dangle',
       'comma-spacing',
@@ -42,10 +42,13 @@ describe('eslint-config-seegno', () => {
       'consistent-this',
       'curly',
       'dot-notation',
+      'generator-star-spacing',
       'id-match',
+      'indent',
       'key-spacing',
       'keyword-spacing',
       'mocha/no-exclusive-tests',
+      'no-new',
       'new-cap',
       'newline-after-var',
       'newline-before-return',
@@ -61,6 +64,7 @@ describe('eslint-config-seegno', () => {
       'no-spaced-func',
       'no-this-before-super',
       'no-underscore-dangle',
+      'no-unused-vars',
       'object-curly-spacing',
       'one-var',
       'one-var-declaration-per-line',
