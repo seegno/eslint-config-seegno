@@ -75,7 +75,7 @@ describe('eslint-config-seegno', () => {
       'semi',
       'semi-spacing',
       'sort-imports-es6/sort-imports-es6',
-      'sorting/sort-object-props',
+      'sort-keys',
       'space-before-blocks',
       'space-before-function-paren',
       'space-in-parens',

@@ -9,9 +9,9 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: ['eslint:recommended', 'plugin:sort-class-members/recommended'],
+  extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['mocha', 'sort-class-members', 'sort-imports-es6', 'sorting', 'sql-template'],
+  plugins: ['mocha', 'sort-class-members', 'sort-imports-es6', 'sql-template'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -156,7 +156,9 @@ module.exports = {
       ignoreMemberSort: false,
       memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
     }],
-    'sorting/sort-object-props': 'error',
+    'sort-keys': ['error', 'asc', {
+      natural: true
+    }],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': 'error',
