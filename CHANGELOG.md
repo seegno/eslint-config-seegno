@@ -1,5 +1,14 @@
 # Changelog
 
+## [v9.0.0](https://github.com/seegno/eslint-config-seegno/tree/v9.0.0) (2017-03-07)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v8.0.1...v9.0.0)
+
+**Merged pull requests:**
+
+- Replace sorting plugin with sort keys [\#70](https://github.com/seegno/eslint-config-seegno/pull/70) ([nunofgs](https://github.com/nunofgs))
+- Add missing rules and improve tests [\#69](https://github.com/seegno/eslint-config-seegno/pull/69) ([nunofgs](https://github.com/nunofgs))
+- Enforce the newline-before-return rule [\#68](https://github.com/seegno/eslint-config-seegno/pull/68) ([filipefigcorreia](https://github.com/filipefigcorreia))
+
 ## [v8.0.1](https://github.com/seegno/eslint-config-seegno/tree/v8.0.1) (2016-11-22)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v8.0.0...v8.0.1)
 
