@@ -101,6 +101,9 @@ class NoClassAssign { }
 
 noop(NoClassAssign);
 
+// `no-confusing-arrow`.
+((foo, bar) => foo ? bar : foo)();
+
 // `no-const-assign`.
 let noConstAssign = true;
 
