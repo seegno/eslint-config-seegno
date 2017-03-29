@@ -69,6 +69,13 @@ noop(`${__dirname}`);
 // `key-spacing`.
 noop({ foo: 'bar' });
 
+// `lines-around-comment`
+
+noop();
+
+// Comment.
+noop();
+
 // `mocha/no-exclusive-tests`.
 describe('noExclusiveTests', () => {
   it('should work');
