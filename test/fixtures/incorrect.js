@@ -170,6 +170,9 @@ class Child extends NoThisBeforeSuper {
 
 noop(Child);
 
+// `no-undef`.
+bar();
+
 // `no-underscore-dangle`.
 class NoUnderscoreDangle {
 

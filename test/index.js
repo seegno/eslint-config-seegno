@@ -63,6 +63,7 @@ describe('eslint-config-seegno', () => {
       'no-multiple-empty-lines',
       'no-spaced-func',
       'no-this-before-super',
+      'no-undef',
       'no-underscore-dangle',
       'no-unused-vars',
       'object-curly-spacing',
