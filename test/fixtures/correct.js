@@ -210,6 +210,11 @@ const quotes2 = `foo`;
 noop(quotes1);
 noop(quotes2);
 
+// `require-await`.
+(async () => {
+  await noop();
+})();
+
 // `semi`.
 noop();
 

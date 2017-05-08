@@ -148,6 +148,7 @@ module.exports = {
       allowTemplateLiterals: true
     }],
     radix: 'error',
+    'require-await': 'error',
     'require-yield': 'error',
     semi: 'error',
     'semi-spacing': 'error',
