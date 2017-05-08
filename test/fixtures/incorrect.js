@@ -226,6 +226,9 @@ const quotes = "foo";
 
 noop(quotes);
 
+// `require-await`.
+(async () => {})();
+
 // `semi`.
 noop()
 
