@@ -141,6 +141,12 @@ module.exports = {
     'padded-blocks': ['error', 'never'],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
+    'prefer-destructuring': ['error', {
+      array: true,
+      object: true
+    }, {
+      enforceForRenamedProperties: true
+    }],
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'quote-props': ['error', 'as-needed'],

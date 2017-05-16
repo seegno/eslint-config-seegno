@@ -192,6 +192,11 @@ if (paddedBlocks) {
   noop();
 }
 
+// `prefer-destructuring`.
+const { bar: biz } = {};
+
+noop(biz);
+
 // `quote-props`.
 const quoteProps = {
   0: 0,
