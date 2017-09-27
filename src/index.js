@@ -138,7 +138,7 @@ module.exports = {
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': 'error',
     'operator-linebreak': ['error', 'none'],
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': ['error', { classes: 'always', blocks: 'never', switches: 'never' }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-spread': 'error',

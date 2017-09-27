@@ -117,6 +117,7 @@ if (noConstantCondition) {
 
 // `no-dupe-class-members`.
 class NoDupeClassMembers {
+
   bar() {
     return 'bar';
   }
@@ -124,6 +125,7 @@ class NoDupeClassMembers {
   foo() {
     return 'foo';
   }
+
 }
 
 noop(NoDupeClassMembers);
@@ -153,10 +155,12 @@ noop();
 const NoThisBeforeSuper = require('no-this-before-super');
 
 class Child extends NoThisBeforeSuper {
+
   constructor() {
     super();
     this.foo = 'bar';
   }
+
 }
 
 noop(Child);
@@ -186,11 +190,17 @@ const operatorLineBreak = 1 + 2;
 noop(operatorLineBreak);
 
 // `padded-blocks`.
-const paddedBlocks = true;
+class PaddleBlocks {
 
-if (paddedBlocks) {
-  noop();
+  constructor() {
+    switch (true) {
+      default: noop();
+    }
+  }
+
 }
+
+noop(new PaddleBlocks());
 
 // `quote-props`.
 const quoteProps = {
