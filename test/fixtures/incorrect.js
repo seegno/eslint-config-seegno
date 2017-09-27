@@ -115,6 +115,7 @@ if (true) {
 
 // `no-dupe-class-members`.
 class NoDupeClassMembers {
+
   foo() {
     return 'bar';
   }
@@ -122,6 +123,7 @@ class NoDupeClassMembers {
   foo() {
     return 'foo';
   }
+
 }
 
 noop(NoDupeClassMembers);
@@ -158,19 +160,23 @@ noop ();
 const NoThisBeforeSuper = require('no-this-before-super');
 
 class Child extends NoThisBeforeSuper {
+
   constructor() {
     this.foo = 'bar';
     super();
   }
+
 }
 
 noop(Child);
 
 // `no-underscore-dangle`.
 class NoUnderscoreDangle {
+
   constructor() {
     this._foo();
   }
+
 }
 
 noop(new NoUnderscoreDangle());
@@ -202,12 +208,16 @@ const operatorLineBreak = 1 +
 noop(operatorLineBreak);
 
 // `padded-blocks`.
-const paddedBlocks = true;
+class PaddleBlocks {
+  constructor() {
 
-if (paddedBlocks) {
+    switch (true) {
 
-  noop();
+      default: noop();
 
+    }
+
+  }
 }
 
 // `quote-props`.

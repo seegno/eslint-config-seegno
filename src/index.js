@@ -138,7 +138,7 @@ module.exports = {
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': 'error',
     'operator-linebreak': ['error', 'none'],
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': ['error', { classes: 'always', blocks: 'never', switches: 'never' }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-spread': 'error',
@@ -161,7 +161,7 @@ module.exports = {
       natural: true
     }],
     'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', { anonymous: 'never', named: 'never' }],
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
