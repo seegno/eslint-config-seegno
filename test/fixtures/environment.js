@@ -1,4 +1,4 @@
-// Incorrect environment-specific (os or editor) setings.
+// Incorrect environment-specific (os or editor) settings.
 
 // `linebreak-style` - Windows line endings (CRLF).
 
