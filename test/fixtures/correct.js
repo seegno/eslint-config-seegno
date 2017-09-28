@@ -1,4 +1,7 @@
 // `jasmine`, `jest` and `mocha` envs.
+
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/no-focused-tests */
 after();
 afterAll();
 afterEach();
@@ -37,6 +40,8 @@ xdescribe();
 xit();
 xspecify();
 xtest();
+/* eslint-enable jest/no-disabled-tests */
+/* eslint-enable jest/no-focused-tests */
 
 // Avoid extra `no-unused-vars` violations.
 function noop() {
@@ -113,13 +118,14 @@ noop(ID_M_ATCH);
 noop(__dirname);
 noop(`${__dirname}`);
 
+// `jest/no-disabled-tests` and `mocha/no-exclusive-tests`.
+describe('noExclusiveTests', () => {
+  it('should work with `it`', () => {});
+  test('should work with `test`', () => {});
+});
+
 // `key-spacing`.
 noop({ foo: 'bar' });
-
-// `mocha/no-exclusive-tests`.
-describe('noExclusiveTests', () => {
-  it('should work');
-});
 
 // `new-cap`.
 const Cap = require('cap');

@@ -67,6 +67,34 @@ noop({
     bar: 'foo'
 });
 
+// `jest/no-disabled-tests`.
+describe.skip('should not allow disable tests with `describe.skip`', () => {});
+it.skip('should not allow disable tests with `it.skip`', () => {});
+test.skip('should not allow disable tests with `test.skip`', () => {});
+
+xdescribe('should not allow disable tests with `xdescribe`', () => {});
+xit('should not allow disable tests with `xit`', () => {});
+xtest('should not allow disable tests with `xtest`', () => {});
+
+it('should not allow disable tests with `it`');
+test('should not allow disable tests with `test`');
+
+it('should not allow disable tests with `pending`', () => {
+  pending();
+});
+
+// `jest/no-focused-tests` and `mocha/no-exclusive-tests`.
+describe.only('should not allow `describe.only`', () => {});
+it.only('should not allow `it.only`', () => {});
+test.only('should not allow `test.only`', () => {});
+fdescribe('should no allow `fdescribe`', () => {});
+fit('should not allow `fit`', () => {});
+
+// `jest/no-identical-title`.
+it('should not allow identical title', () => {});
+
+it('should not allow identical title', () => {});
+
 // `key-spacing`.
 noop({ foo:'bar' });
 
@@ -76,11 +104,6 @@ let keywordSpacing = true;
 if(keywordSpacing) {
   keywordSpacing = false;
 }
-
-// `mocha/no-exclusive-tests`.
-describe.only('noExclusiveTests', () => {
-  it('should not work');
-});
 
 // `new-cap`.
 const cap = require('cap');
