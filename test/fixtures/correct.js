@@ -304,6 +304,15 @@ const sortObjectProps = {
 
 noop(sortObjectProps);
 
+// `sort-requires/sort-requires`.
+const _ = require('require-1');
+const require2 = require('require-2');
+const { require3 } = require('require-3');
+
+noop(_);
+noop(require2);
+noop(require3);
+
 // `space-before-function-paren`.
 (function() {
   noop();

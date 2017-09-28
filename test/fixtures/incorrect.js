@@ -275,6 +275,15 @@ const sortObjectProps = {
 
 noop(sortObjectProps);
 
+// `sort-requires/sort-requires`.
+const { require3 } = require('require-3');
+const require2 = require('require-2');
+const _ = require('require-1');
+
+noop(_);
+noop(require2);
+noop(require3);
+
 // `space-before-blocks`.
 let spaceBeforeBlocks = true;
 
