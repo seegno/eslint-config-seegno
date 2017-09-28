@@ -1,6 +1,6 @@
 // Avoid extra `no-unused-vars` violations.
 function noop() {
-  // do nothing
+  // Do nothing
 }
 
 // `array-bracket-spacing`.
@@ -16,6 +16,13 @@ try {
 catch (e) {
   noop();
 }
+
+// `capitalized-comments`.
+
+noop();
+
+// first line must be capitalized.
+// following lines don't.
 
 // `comma-dangle`.
 noop({ bar: 'foo', foo: 'bar', });
