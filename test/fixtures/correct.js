@@ -1,3 +1,43 @@
+// `jasmine`, `jest` and `mocha` envs.
+after();
+afterAll();
+afterEach();
+before();
+beforeAll();
+beforeEach();
+check();
+context();
+describe();
+expect();
+fail();
+fdescribe();
+fit();
+gen();
+it();
+jasmine();
+jest();
+mocha();
+pending();
+pit();
+require();
+run();
+runs();
+setup();
+specify();
+spyOn();
+suite();
+suiteSetup();
+suiteTeardown();
+teardown();
+test();
+waits();
+waitsFor();
+xcontext();
+xdescribe();
+xit();
+xspecify();
+xtest();
+
 // Avoid extra `no-unused-vars` violations.
 function noop() {
   // do nothing
