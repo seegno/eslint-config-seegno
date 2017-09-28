@@ -237,7 +237,7 @@ const operatorLineBreak = 1 + 2;
 noop(operatorLineBreak);
 
 // `padded-blocks`.
-class PaddleBlocks {
+class PaddedBlocks {
 
   constructor() {
     switch (true) {
@@ -247,7 +247,7 @@ class PaddleBlocks {
 
 }
 
-noop(new PaddleBlocks());
+noop(new PaddedBlocks());
 
 // `quote-props`.
 const quoteProps = {
