@@ -1,5 +1,20 @@
 # Changelog
 
+## [v10.0.0](https://github.com/seegno/eslint-config-seegno/tree/v10.0.0) (2017-09-29)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v9.0.0...v10.0.0)
+
+**Merged pull requests:**
+
+- Update babel-eslint@8.0.1 [\#82](https://github.com/seegno/eslint-config-seegno/pull/82) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Add node 8 to travis configuration [\#81](https://github.com/seegno/eslint-config-seegno/pull/81) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Add jest plugin and rules [\#80](https://github.com/seegno/eslint-config-seegno/pull/80) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Improve incorrect code test [\#79](https://github.com/seegno/eslint-config-seegno/pull/79) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Fix typo in environment.js [\#78](https://github.com/seegno/eslint-config-seegno/pull/78) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Update eslint to version v4.7.2 [\#77](https://github.com/seegno/eslint-config-seegno/pull/77) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Enable `require-await` rule [\#75](https://github.com/seegno/eslint-config-seegno/pull/75) ([ricardogama](https://github.com/ricardogama))
+- Add jasmine and jest environments [\#72](https://github.com/seegno/eslint-config-seegno/pull/72) ([ricardogama](https://github.com/ricardogama))
+- Add `capitalized-comments` rule [\#67](https://github.com/seegno/eslint-config-seegno/pull/67) ([rplopes](https://github.com/rplopes))
+
 ## [v9.0.0](https://github.com/seegno/eslint-config-seegno/tree/v9.0.0) (2017-03-07)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v8.0.1...v9.0.0)
 
@@ -115,13 +130,19 @@
 - Fix async arrow functions [\#9](https://github.com/seegno/eslint-config-seegno/pull/9) ([nunofgs](https://github.com/nunofgs))
 
 ## [v1.1.0](https://github.com/seegno/eslint-config-seegno/tree/v1.1.0) (2015-11-05)
-[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.0.0...v1.1.0)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.1.0...v1.1.0)
+
+## [1.1.0](https://github.com/seegno/eslint-config-seegno/tree/1.1.0) (2015-11-05)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.0.0...1.1.0)
 
 **Merged pull requests:**
 
 - Add missing ES6 rules [\#5](https://github.com/seegno/eslint-config-seegno/pull/5) ([nunofgs](https://github.com/nunofgs))
 
 ## [v1.0.0](https://github.com/seegno/eslint-config-seegno/tree/v1.0.0) (2015-11-02)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/1.0.0...v1.0.0)
+
+## [1.0.0](https://github.com/seegno/eslint-config-seegno/tree/1.0.0) (2015-11-02)
 **Merged pull requests:**
 
 - Add first version [\#1](https://github.com/seegno/eslint-config-seegno/pull/1) ([ruiquelhas](https://github.com/ruiquelhas))
