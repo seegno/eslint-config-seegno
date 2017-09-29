@@ -121,6 +121,7 @@ describe('eslint-config-seegno', () => {
       'space-unary-ops',
       'spaced-comment',
       'sql-template/no-unsafe-query',
+      'switch-case/newline-between-switch-case',
       'template-curly-spacing',
       'template-curly-spacing',
       'wrap-iife',

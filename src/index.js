@@ -13,7 +13,7 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['jest', 'mocha', 'sort-class-members', 'sort-imports-es6', 'sql-template'],
+  plugins: ['jest', 'mocha', 'sort-class-members', 'sort-imports-es6', 'sql-template', 'switch-case'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -176,6 +176,7 @@ module.exports = {
     'spaced-comment': 'error',
     'sql-template/no-unsafe-query': 'error',
     strict: 'off',
+    'switch-case/newline-between-switch-case': ['error', 'always'],
     'template-curly-spacing': 'error',
     'valid-jsdoc': 'error',
     'vars-on-top': 'error',
