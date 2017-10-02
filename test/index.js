@@ -75,6 +75,7 @@ describe('eslint-config-seegno', () => {
       'keyword-spacing',
       'no-new',
       'new-cap',
+      'new-with-error/new-with-error',
       'newline-after-var',
       'newline-before-return',
       'no-class-assign',
