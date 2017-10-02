@@ -13,7 +13,7 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['jest', 'mocha', 'new-with-error', 'sort-class-members', 'sort-imports-es6', 'sql-template', 'switch-case'],
+  plugins: ['jest', 'mocha', 'new-with-error', 'sort-class-members', 'sort-destructure-keys', 'sort-imports-es6', 'sql-template', 'switch-case'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -161,6 +161,7 @@ module.exports = {
     'require-yield': 'error',
     semi: 'error',
     'semi-spacing': 'error',
+    'sort-destructure-keys/sort-destructure-keys': 2,
     'sort-imports-es6/sort-imports-es6': ['error', {
       ignoreCase: false,
       ignoreMemberSort: false,
