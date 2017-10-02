@@ -223,6 +223,13 @@ noop(Child);
 // TODO: do something.
 // FIXME: this is not a good idea.
 
+// `new-with-error`.
+try {
+  noop();
+} catch (e) {
+  throw new Error();
+}
+
 // `object-curly-spacing`.
 const objectCurlySpacing1 = { foo: 'bar' };
 const objectCurlySpacing2 = {};

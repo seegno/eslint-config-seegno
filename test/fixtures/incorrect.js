@@ -110,6 +110,13 @@ const cap = require('cap');
 
 new cap();
 
+// `new-with-error`.
+try {
+  noop();
+} catch (e) {
+  throw Error();
+}
+
 // `newline-after-var`.
 const newLineAfterVar = 'foo';
 noop(newLineAfterVar);

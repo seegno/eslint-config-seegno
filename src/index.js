@@ -13,7 +13,7 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['jest', 'mocha', 'sort-class-members', 'sort-imports-es6', 'sql-template', 'switch-case'],
+  plugins: ['jest', 'mocha', 'new-with-error', 'sort-class-members', 'sort-imports-es6', 'sql-template', 'switch-case'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -70,6 +70,7 @@ module.exports = {
     'mocha/no-exclusive-tests': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
+    'new-with-error/new-with-error': 'error',
     'newline-after-var': 'error',
     'newline-before-return': 'error',
     'no-alert': 'error',
