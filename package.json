@@ -41,7 +41,7 @@
     "should": "^9.0.2"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "options": {
     "mocha": "-t 10000 --require should test"
