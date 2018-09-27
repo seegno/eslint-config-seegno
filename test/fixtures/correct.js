@@ -368,6 +368,16 @@ noop(`${templateCurlySpacing}`);
   noop();
 })();
 
+// `sort-destructure-keys/sort-destructure-keys`.
+const props = { KeyA: 1, keyA: 2, keyB: 3, keyZ: 4 };
+const { KeyA, keyA, keyB, keyZ, ...rest } = props;
+
+noop(KeyA);
+noop(keyA);
+noop(keyB);
+noop(keyZ);
+noop(rest);
+
 // `yoda`.
 let yoda = true;
 
