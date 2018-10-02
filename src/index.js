@@ -13,7 +13,7 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['jest', 'mocha', 'new-with-error', 'sort-class-members', 'sort-destructure-keys', 'sort-imports-es6', 'sql-template', 'switch-case'],
+  plugins: ['flowtype', 'jest', 'mocha', 'new-with-error', 'react', 'sort-class-members', 'sort-destructure-keys', 'sort-imports-es6', 'sql-template', 'switch-case'],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -42,6 +42,18 @@ module.exports = {
     'dot-notation': 'error',
     'eol-last': 'error',
     eqeqeq: ['error', 'smart'],
+    'flowtype/boolean-style': 'error',
+    'flowtype/define-flow-type': 'error',
+    'flowtype/delimiter-dangle': 'error',
+    'flowtype/generic-spacing': 'error',
+    'flowtype/no-dupe-keys': 'error',
+    'flowtype/require-valid-file-annotation': ['error', 'always'],
+    'flowtype/semi': 'error',
+    'flowtype/sort-keys': 'error',
+    'flowtype/space-after-type-colon': 'error',
+    'flowtype/space-before-generic-bracket': 'error',
+    'flowtype/union-intersection-spacing': 'error',
+    'flowtype/use-flow-type': 'error',
     'func-names': 'off',
     'func-style': ['error', 'declaration', {
       allowArrowFunctions: true
@@ -60,6 +72,7 @@ module.exports = {
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
+    'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     'linebreak-style': 'error',
@@ -89,7 +102,9 @@ module.exports = {
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
-    'no-extra-parens': 'error',
+    'no-extra-parens': ['error', 'all', {
+      ignoreJSX: 'all'
+    }],
     'no-floating-decimal': 'error',
     'no-implied-eval': 'error',
     'no-inline-comments': 'error',
@@ -157,6 +172,32 @@ module.exports = {
       allowTemplateLiterals: true
     }],
     radix: 'error',
+    'react/display-name': 'error',
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-closing-bracket-location': 'error',
+    'react/jsx-curly-brace-presence': ['error', {
+      props: 'always'
+    }],
+    'react/jsx-curly-spacing': 'error',
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-key': 'error',
+    'react/jsx-max-props-per-line': 'error',
+    'react/jsx-no-duplicate-props': 'error',
+    'react/jsx-no-literals': 'error',
+    'react/jsx-no-undef': 'error',
+    'react/jsx-sort-props': 'error',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/jsx-wrap-multilines': 'error',
+    'react/no-danger': 'error',
+    'react/no-direct-mutation-state': 'error',
+    'react/no-string-refs': 'error',
+    'react/no-unknown-property': 'error',
+    'react/prefer-es6-class': 'error',
+    'react/react-in-jsx-scope': 'error',
+    'react/self-closing-comp': 'error',
+    'react/sort-prop-types': 'error',
     'require-await': 'error',
     'require-yield': 'error',
     semi: 'error',
@@ -184,5 +225,10 @@ module.exports = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     yoda: 'error'
+  },
+  settings: {
+    flowtype: {
+      onlyFilesWithFlowAnnotation: true
+    }
   }
 };
