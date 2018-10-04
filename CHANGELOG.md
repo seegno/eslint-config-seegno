@@ -1,5 +1,18 @@
 # Changelog
 
+## [v11.0.0](https://github.com/seegno/eslint-config-seegno/tree/v11.0.0) (2018-10-04)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v10.0.0...v11.0.0)
+
+**Merged pull requests:**
+
+- Add react and flow rules [\#90](https://github.com/seegno/eslint-config-seegno/pull/90) ([bsonntag](https://github.com/bsonntag))
+- Update node supported versions [\#89](https://github.com/seegno/eslint-config-seegno/pull/89) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Update dependencies [\#87](https://github.com/seegno/eslint-config-seegno/pull/87) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Add sort-destructuring-keys rule [\#86](https://github.com/seegno/eslint-config-seegno/pull/86) ([johnmaia](https://github.com/johnmaia))
+- Update eslint@4.8.0 [\#85](https://github.com/seegno/eslint-config-seegno/pull/85) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
+- Add new-with-error plugin and rules [\#84](https://github.com/seegno/eslint-config-seegno/pull/84) ([abelsoares](https://github.com/abelsoares))
+- Add switch-case plugin and rules [\#83](https://github.com/seegno/eslint-config-seegno/pull/83) ([abelsoares](https://github.com/abelsoares))
+
 ## [v10.0.0](https://github.com/seegno/eslint-config-seegno/tree/v10.0.0) (2017-09-29)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v9.0.0...v10.0.0)
 
