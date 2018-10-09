@@ -202,7 +202,9 @@ module.exports = {
     'require-yield': 'error',
     semi: 'error',
     'semi-spacing': 'error',
-    'sort-destructure-keys/sort-destructure-keys': 2,
+    'sort-destructure-keys/sort-destructure-keys': ['error', {
+      caseSensitive: true
+    }],
     'sort-imports-es6/sort-imports-es6': ['error', {
       ignoreCase: false,
       ignoreMemberSort: false,
