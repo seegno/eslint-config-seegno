@@ -197,6 +197,47 @@ module.exports = {
     'react/prefer-es6-class': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/self-closing-comp': 'error',
+    'react/sort-comp': ['error' , {
+      order: [
+        'static-methods',
+        'initialization',
+        'everything-else',
+        '/^handle.+$/',
+        'lifecycle',
+        '/^render.+$/',
+        'render'
+      ],
+      groups: {
+        initialization: [
+          'displayName',
+          'propTypes',
+          'contextTypes',
+          'childContextTypes',
+          'mixins',
+          'statics',
+          'defaultProps',
+          'constructor',
+          'getDefaultProps',
+          'state',
+          'getInitialState',
+          'getChildContext'
+        ],
+        lifecycle: [
+          'componentWillMount',
+          'UNSAFE_componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'UNSAFE_componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'UNSAFE_componentWillUpdate',
+          'getSnapshotBeforeUpdate',
+          'componentDidUpdate',
+          'componentDidCatch',
+          'componentWillUnmount'
+        ]
+      }
+    }],
     'react/sort-prop-types': 'error',
     'require-await': 'error',
     'require-yield': 'error',
