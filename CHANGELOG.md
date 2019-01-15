@@ -1,5 +1,12 @@
 # Changelog
 
+## [v12.0.0](https://github.com/seegno/eslint-config-seegno/tree/v12.0.0) (2019-01-15)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v11.0.1...v12.0.0)
+
+**Merged pull requests:**
+
+- Add react class element order rules [\#92](https://github.com/seegno/eslint-config-seegno/pull/92) ([jmacedoit](https://github.com/jmacedoit))
+
 ## [v11.0.1](https://github.com/seegno/eslint-config-seegno/tree/v11.0.1) (2018-10-09)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v11.0.0...v11.0.1)
 
