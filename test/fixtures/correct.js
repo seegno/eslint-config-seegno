@@ -352,6 +352,7 @@ db.query(`SELECT foo FROM bar`);
 // `switch-case/newline-between-switch-case`.
 switch (true) {
   case 'foobar':
+  case 'foobiz':
     break;
 
   default:

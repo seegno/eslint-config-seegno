@@ -123,6 +123,8 @@ describe('eslint-config-seegno', () => {
       'spaced-comment',
       'sql-template/no-unsafe-query',
       'switch-case/newline-between-switch-case',
+      'no-fallthrough',
+      'switch-case/newline-between-switch-case',
       'template-curly-spacing',
       'template-curly-spacing',
       'wrap-iife',

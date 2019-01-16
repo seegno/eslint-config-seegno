@@ -344,9 +344,11 @@ const foo = 'foo';
 
 db.query(`SELECT ${foo} FROM bar`);
 
-// `switch-case/newline-between-switch-case`.
+// `switch-case/newline-between-switch-case` and `no-fallthrough`.
 switch (true) {
   case 'foobar':
+
+  case 'foobiz':
     break;
   default:
     return;
