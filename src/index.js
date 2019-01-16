@@ -162,7 +162,7 @@ module.exports = {
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': 'error',
     'operator-linebreak': ['error', 'none'],
-    'padded-blocks': ['error', { classes: 'always', blocks: 'never', switches: 'never' }],
+    'padded-blocks': ['error', { blocks: 'never', classes: 'always', switches: 'never' }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-spread': 'error',
@@ -197,16 +197,7 @@ module.exports = {
     'react/prefer-es6-class': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': ['error' , {
-      order: [
-        'static-methods',
-        'initialization',
-        'everything-else',
-        '/^handle.+$/',
-        'lifecycle',
-        '/^render.+$/',
-        'render'
-      ],
+    'react/sort-comp': ['error', {
       groups: {
         initialization: [
           'displayName',
@@ -236,7 +227,16 @@ module.exports = {
           'componentDidCatch',
           'componentWillUnmount'
         ]
-      }
+      },
+      order: [
+        'static-methods',
+        'initialization',
+        'everything-else',
+        '/^handle.+$/',
+        'lifecycle',
+        '/^render.+$/',
+        'render'
+      ]
     }],
     'react/sort-prop-types': 'error',
     'require-await': 'error',
