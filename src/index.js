@@ -262,7 +262,7 @@ module.exports = {
     'spaced-comment': 'error',
     'sql-template/no-unsafe-query': 'error',
     strict: 'off',
-    'switch-case/newline-between-switch-case': ['error', 'always'],
+    'switch-case/newline-between-switch-case': ['error', 'always', { fallthrough: 'never' }],
     'template-curly-spacing': 'error',
     'valid-jsdoc': 'error',
     'vars-on-top': 'error',
