@@ -179,6 +179,7 @@ module.exports = {
       props: 'always'
     }],
     'react/jsx-curly-spacing': 'error',
+    'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-key': 'error',
