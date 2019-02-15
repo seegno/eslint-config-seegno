@@ -285,6 +285,9 @@ module.exports = {
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: true
+    },
+    react: {
+      version: 'detect'
     }
   }
 };
