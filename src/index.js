@@ -13,7 +13,19 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
-  plugins: ['flowtype', 'jest', 'mocha', 'new-with-error', 'react', 'sort-class-members', 'sort-destructure-keys', 'sort-imports-es6', 'sql-template', 'switch-case'],
+  plugins: [
+    'flowtype',
+    'jest',
+    'mocha',
+    'new-with-error',
+    'react-hooks',
+    'react',
+    'sort-class-members',
+    'sort-destructure-keys',
+    'sort-imports-es6',
+    'sql-template',
+    'switch-case'
+  ],
   root: true,
   rules: {
     'accessor-pairs': 'error',
@@ -239,6 +251,7 @@ module.exports = {
       ]
     }],
     'react/sort-prop-types': 'error',
+    'react-hooks/rules-of-hooks': 'error',
     'require-await': 'error',
     'require-yield': 'error',
     semi: 'error',
