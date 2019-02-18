@@ -123,13 +123,14 @@ describe('eslint-config-seegno', () => {
       'spaced-comment',
       'sql-template/no-unsafe-query',
       'switch-case/newline-between-switch-case',
-      'no-fallthrough',
       'switch-case/newline-between-switch-case',
+      'no-fallthrough',
       'template-curly-spacing',
       'template-curly-spacing',
       'wrap-iife',
       'sort-destructure-keys/sort-destructure-keys',
-      'yoda'
+      'yoda',
+      'react-hooks/rules-of-hooks'
     ]);
   });
 });

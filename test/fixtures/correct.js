@@ -385,3 +385,14 @@ let yoda = true;
 if (yoda === true) {
   yoda = false;
 }
+
+// `react-hooks/rules-of-hooks`.
+const useEffect = noop;
+
+const ReactComponent = () => {
+  useEffect(noop);
+
+  return null;
+};
+
+noop(ReactComponent);
