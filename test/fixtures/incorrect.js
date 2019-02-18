@@ -380,3 +380,16 @@ let yoda = true;
 if (true === yoda) {
   yoda = false;
 }
+
+// `react-hooks/rules-of-hooks`.
+const useEffect = noop;
+
+const ReactComponent = () => {
+  if (Math.random() > 0.5) {
+    useEffect(noop);
+  }
+
+  return null;
+};
+
+noop(ReactComponent);
