@@ -405,10 +405,10 @@ eslint-plugin-mocha@5.3.0:
   dependencies:
     ramda "^0.26.1"
 
-eslint-plugin-new-with-error@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-new-with-error/-/eslint-plugin-new-with-error-1.1.0.tgz#8fb9bdb97d83f199eb1fff491fdf41b42855b4ae"
-  integrity sha1-j7m9uX2D8ZnrH/9JH99BtChVtK4=
+eslint-plugin-new-with-error@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-new-with-error/-/eslint-plugin-new-with-error-2.0.0.tgz#ff84db8b25365945a6a2fc694c3e6d93b8f10ad8"
+  integrity sha512-8jty4XD7/snyhyClvXaiy0V7fjFiJD0Vw9U4+ntXjcgqhgJjfN1xFMZDBrOObTfHLGCbyprZP2Sl30gjPXRcLw==
 
 eslint-plugin-react-hooks@^1.0.2:
   version "1.3.0"
