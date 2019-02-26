@@ -96,7 +96,6 @@ module.exports = {
     'new-cap': 'error',
     'new-parens': 'error',
     'new-with-error/new-with-error': 'error',
-    'newline-after-var': 'error',
     'newline-before-return': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
@@ -175,6 +174,11 @@ module.exports = {
     'operator-assignment': 'error',
     'operator-linebreak': ['error', 'none'],
     'padded-blocks': ['error', { blocks: 'never', classes: 'always', switches: 'never' }],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', next: '*', prev: ['const', 'let', 'var'] },
+      { blankLine: 'any', next: ['const', 'let', 'var'], prev: ['const', 'let', 'var'] }
+    ],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-spread': 'error',
@@ -200,10 +204,10 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-tag-spacing': ['error', {
-      'afterOpening': 'never',
-      'beforeClosing': 'never',
-      'beforeSelfClosing': 'always',
-      'closingSlash': 'never'
+      afterOpening: 'never',
+      beforeClosing: 'never',
+      beforeSelfClosing: 'always',
+      closingSlash: 'never'
     }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
