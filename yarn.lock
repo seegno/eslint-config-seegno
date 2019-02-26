@@ -433,7 +433,7 @@ eslint-plugin-sort-class-members@1.4.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-sort-class-members/-/eslint-plugin-sort-class-members-1.4.0.tgz#71295d127752131e798ed1e5e76970f2c2c3ae48"
   integrity sha512-FQG6d4Cy2vYmG9gr6J138E91WaltqwOk/b/7GCssPqnUmizrcgOeN91bV5eOTuoS4RSH1Jdn4ukWEtyWLwV8ig==
 
-eslint-plugin-sort-destructure-keys@^1.1.0:
+eslint-plugin-sort-destructure-keys@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-sort-destructure-keys/-/eslint-plugin-sort-destructure-keys-1.2.0.tgz#1dddbc775bd3672319fd92f88d4efd6fe88dba1b"
   integrity sha512-2rvRzhImWcq9r0hBojlvzCKlT7lYLrHCH/N37GWu7SKdn3G0PbEIXLt5pdHY6I4F49bmBQr1+7cBMM8XWv0xgQ==
