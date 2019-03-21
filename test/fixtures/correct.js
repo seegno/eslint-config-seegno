@@ -405,3 +405,18 @@ const TagSpacing = () => (
 );
 
 noop(TagSpacing);
+
+// `react/prefer-stateless-function`.
+class PreferStatelessFunction extends React.Component {
+
+  getFoo = () => {
+    return 'foo';
+  }
+
+  render() {
+    return this.getFoo();
+  }
+
+}
+
+noop(PreferStatelessFunction);
