@@ -389,10 +389,19 @@ if (yoda === true) {
 // `react-hooks/rules-of-hooks`.
 const useEffect = noop;
 
-const ReactComponent = () => {
+const RulesOfHooks = () => {
   useEffect(noop);
 
   return null;
 };
 
-noop(ReactComponent);
+noop(RulesOfHooks);
+
+// `react/jsx-tag-spacing`.
+const React = null;
+
+const TagSpacing = () => (
+  <div />
+);
+
+noop(TagSpacing);

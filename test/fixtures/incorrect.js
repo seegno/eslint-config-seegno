@@ -384,7 +384,7 @@ if (true === yoda) {
 // `react-hooks/rules-of-hooks`.
 const useEffect = noop;
 
-const ReactComponent = () => {
+const RulesOfHooks = () => {
   if (Math.random() > 0.5) {
     useEffect(noop);
   }
@@ -392,4 +392,33 @@ const ReactComponent = () => {
   return null;
 };
 
-noop(ReactComponent);
+noop(RulesOfHooks);
+
+// `react/jsx-tag-spacing`.
+const React = null;
+
+const TagSpacingAfterOpening = () => (
+  < div />
+);
+
+noop(TagSpacingAfterOpening);
+
+const TagSpacingBeforeClosing = () => (
+  <div>
+    {'foo'}
+  </div >
+);
+
+noop(TagSpacingBeforeClosing);
+
+const TagSpacingBeforeSelfClosing = () => (
+  <div/>
+);
+
+noop(TagSpacingBeforeSelfClosing);
+
+const TagSpacingClosingSlash = () => (
+  <div/ >
+);
+
+noop(TagSpacingClosingSlash);
