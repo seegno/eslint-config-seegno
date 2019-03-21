@@ -199,6 +199,12 @@ module.exports = {
     'react/jsx-no-literals': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
+    'react/jsx-tag-spacing': ['error', {
+      'afterOpening': 'never',
+      'beforeClosing': 'never',
+      'beforeSelfClosing': 'always',
+      'closingSlash': 'never'
+    }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'error',
