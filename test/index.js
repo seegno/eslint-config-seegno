@@ -135,7 +135,8 @@ describe('eslint-config-seegno', () => {
       'react/jsx-tag-spacing',
       'react/jsx-tag-spacing',
       'react/jsx-tag-spacing',
-      'react/jsx-tag-spacing'
+      'react/jsx-tag-spacing',
+      'react/prefer-stateless-function'
     ]);
   });
 });

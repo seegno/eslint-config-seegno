@@ -422,3 +422,14 @@ const TagSpacingClosingSlash = () => (
 );
 
 noop(TagSpacingClosingSlash);
+
+// `react/prefer-stateless-function`.
+class PreferStatelessFunction extends React.Component {
+
+  render() {
+    return null;
+  }
+
+}
+
+noop(PreferStatelessFunction);
