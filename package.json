@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-seegno",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "description": "Seegno-flavored ESLint config",
   "keywords": [
     "config",
