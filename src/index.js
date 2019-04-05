@@ -262,6 +262,7 @@ module.exports = {
       ]
     }],
     'react/sort-prop-types': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'require-await': 'error',
     'require-yield': 'error',
