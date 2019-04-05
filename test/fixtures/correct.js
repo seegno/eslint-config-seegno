@@ -8,14 +8,12 @@ afterEach();
 before();
 beforeAll();
 beforeEach();
-check();
 context();
 describe();
 expect();
 fail();
 fdescribe();
 fit();
-gen();
 it();
 jasmine();
 jest();
@@ -132,11 +130,6 @@ const Cap = require('cap');
 const newCap = new Cap();
 
 noop(newCap);
-
-// `newline-after-var`.
-const newLineAfterVar = 'foo';
-
-noop(newLineAfterVar);
 
 // `newline-before-return`.
 function funcThatReturns(bar) {
@@ -261,6 +254,11 @@ class PaddedBlocks {
 }
 
 noop(new PaddedBlocks());
+
+// `padding-line-between-statements`.
+const paddingLineBetweenStatements = 'foo';
+
+noop(paddingLineBetweenStatements);
 
 // `quote-props`.
 const quoteProps = {

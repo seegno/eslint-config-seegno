@@ -117,10 +117,6 @@ try {
   throw Error();
 }
 
-// `newline-after-var`.
-const newLineAfterVar = 'foo';
-noop(newLineAfterVar);
-
 // `newline-before-return`.
 function funcThatReturns(bar) {
   if (!bar) {
@@ -261,6 +257,10 @@ class PaddedBlocks {
 }
 
 noop(new PaddedBlocks());
+
+// `padding-line-between-statements`.
+const paddingLineBetweenStatements = 'foo';
+noop(paddingLineBetweenStatements);
 
 // `quote-props`.
 const quoteProps = {
