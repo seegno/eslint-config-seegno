@@ -12,18 +12,34 @@
   "bugs": {
     "url": "https://github.com/seegno/eslint-config-seegno/issues"
   },
-  "license": "MIT",
-  "author": "Seegno",
-  "main": "src",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/seegno/eslint-config-seegno.git"
   },
+  "license": "MIT",
+  "author": "Seegno",
+  "main": "src",
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
-    "lint": "eslint --config src/index.js src/index.js test/index.js",
+    "lint": "eslint src/index.js test/index.js",
+    "lint-staged": "lint-staged",
     "test": "mocha $npm_package_options_mocha",
     "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "ignore": [
+      "test/fixtures/*.js"
+    ],
+    "linters": {
+      "**/*.js": "eslint",
+      "package.json": [
+        "sort-package-json",
+        "git add"
+      ]
+    }
   },
   "dependencies": {
     "babel-eslint": "10.0.1",
