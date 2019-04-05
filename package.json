@@ -44,7 +44,8 @@
     "lint-staged": "^8.1.5",
     "mocha": "6.0.2",
     "pre-commit": "^1.2.2",
-    "should": "13.2.3"
+    "should": "13.2.3",
+    "sort-package-json": "^1.22.1"
   },
   "engines": {
     "node": ">=8"
