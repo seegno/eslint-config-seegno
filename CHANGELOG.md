@@ -1,5 +1,13 @@
 # Changelog
 
+## [v14.0.0](https://github.com/seegno/eslint-config-seegno/tree/v14.0.0) (2019-04-08)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v13.0.0...v14.0.0)
+
+**Merged pull requests:**
+
+- Add pre-commit hook [\#101](https://github.com/seegno/eslint-config-seegno/pull/101) ([bsonntag](https://github.com/bsonntag))
+- Update package dependencies [\#97](https://github.com/seegno/eslint-config-seegno/pull/97) ([johnmaia](https://github.com/johnmaia))
+
 ## [v13.0.0](https://github.com/seegno/eslint-config-seegno/tree/v13.0.0) (2019-03-27)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v12.0.0...v13.0.0)
 
