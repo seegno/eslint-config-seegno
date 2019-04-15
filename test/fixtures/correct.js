@@ -46,6 +46,9 @@ function noop() {
   // Do nothing
 }
 
+// Declare `React` and other react-related variables.
+const React = null;
+
 // `array-bracket-spacing`, `comma-spacing` and `no-multi-spaces`.
 noop(['bar', 'foo']);
 
@@ -384,20 +387,36 @@ if (yoda === true) {
   yoda = false;
 }
 
-// `react-hooks/rules-of-hooks`.
-const useEffect = noop;
+// `react-hooks/exhaustive-deps`.
+const ExhaustiveDeps = ({ foo }) => {
+  React.useEffect(() => foo());
+  React.useEffect(() => foo(), [foo]);
+  React.useMemo(() => foo(), [foo]);
+  React.useCallback(() => foo(), [foo]);
 
-const RulesOfHooks = () => {
-  useEffect(noop);
+  const [bar, setBar] = React.useState();
+
+  React.useEffect(() => setBar(!bar), [bar]);
 
   return null;
 };
 
-noop(RulesOfHooks);
+noop(ExhaustiveDeps);
+
+// `react-hooks/rules-of-hooks`.
+const RulesOfHooks = () => {
+  React.useState();
+
+  return null;
+};
+
+function useHook() {
+  React.useState();
+}
+
+noop(RulesOfHooks, useHook);
 
 // `react/jsx-tag-spacing`.
-const React = null;
-
 const TagSpacing = () => (
   <div />
 );
