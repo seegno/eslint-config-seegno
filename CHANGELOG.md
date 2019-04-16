@@ -1,5 +1,12 @@
 # Changelog
 
+## [v15.0.0](https://github.com/seegno/eslint-config-seegno/tree/v15.0.0) (2019-04-16)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v14.0.0...v15.0.0)
+
+**Merged pull requests:**
+
+- Add react-hooks/exhaustive-deps rule [\#100](https://github.com/seegno/eslint-config-seegno/pull/100) ([bsonntag](https://github.com/bsonntag))
+
 ## [v14.0.0](https://github.com/seegno/eslint-config-seegno/tree/v14.0.0) (2019-04-08)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v13.0.0...v14.0.0)
 
