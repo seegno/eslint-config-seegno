@@ -104,6 +104,7 @@ module.exports = {
     'no-catch-shadow': 'off',
     'no-cond-assign': ['error', 'always'],
     'no-confusing-arrow': 'error',
+    'no-console': 'error',
     'no-div-regex': 'error',
     'no-duplicate-imports': 'error',
     'no-else-return': 'error',

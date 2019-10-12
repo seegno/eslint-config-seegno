@@ -78,6 +78,7 @@ describe('eslint-config-seegno', () => {
       'new-with-error/new-with-error',
       'newline-before-return',
       'no-class-assign',
+      'no-console',
       'no-const-assign',
       'no-constant-condition',
       'no-dupe-class-members',
