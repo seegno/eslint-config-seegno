@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const Linter = require('eslint/lib/cli-engine');
+const CLIEngine = require('eslint').CLIEngine;
 const path = require('path');
 
 /**
@@ -12,7 +12,7 @@ const path = require('path');
  */
 
 describe('eslint-config-seegno', () => {
-  const linter = new Linter({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
+  const linter = new CLIEngine({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
 
   it('should not generate any violation for correct code', () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');
@@ -62,12 +62,12 @@ describe('eslint-config-seegno', () => {
       'jest/no-disabled-tests',
       'jest/no-disabled-tests',
       'jest/no-disabled-tests',
-      'jest/no-focused-tests',
       'mocha/no-exclusive-tests',
       'jest/no-focused-tests',
-      'mocha/no-exclusive-tests',
       'jest/no-focused-tests',
       'mocha/no-exclusive-tests',
+      'mocha/no-exclusive-tests',
+      'jest/no-focused-tests',
       'jest/no-focused-tests',
       'jest/no-focused-tests',
       'jest/no-identical-title',
