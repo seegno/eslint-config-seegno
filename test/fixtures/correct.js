@@ -416,6 +416,22 @@ function useHook() {
 
 noop(RulesOfHooks, useHook);
 
+// `react/jsx-curly-brace-presence`.
+const CurlyBracePresence = () => (
+  <div foo={'bar'} />
+);
+
+noop(CurlyBracePresence);
+
+// `react/jsx-no-literals`.
+const NoLiterals = () => (
+  <div>
+    {'qux'}
+  </div>
+);
+
+noop(NoLiterals);
+
 // `react/jsx-tag-spacing`.
 const TagSpacing = () => (
   <div />
