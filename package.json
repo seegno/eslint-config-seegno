@@ -30,16 +30,9 @@
     "lint-staged"
   ],
   "lint-staged": {
-    "ignore": [
-      "test/fixtures/*.js"
-    ],
-    "linters": {
-      "**/*.js": "eslint",
-      "package.json": [
-        "sort-package-json",
-        "git add"
-      ]
-    }
+    "(src|test)/**/*.js": "jest --findRelatedTests",
+    "**/*.js": "eslint",
+    "package.json": "sort-package-json"
   },
   "jest": {
     "testRegex": "test/index.js"
