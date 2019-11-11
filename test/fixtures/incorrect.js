@@ -137,6 +137,9 @@ NoClassAssign = 'foobar';
 
 noop(NoClassAssign);
 
+// `no-console`.
+console.log('foo');
+
 // `no-const-assign`.
 const noConstAssign = true;
 
@@ -220,7 +223,7 @@ class NoUnderscoreDangle {
 
 noop(new NoUnderscoreDangle());
 
-// `no-unused-vars`
+// `no-unused-vars`.
 const foobar = '';
 
 // `object-curly-spacing`.
