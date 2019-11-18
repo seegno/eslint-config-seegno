@@ -12,7 +12,10 @@ const path = require('path');
  */
 
 describe('eslint-config-seegno', () => {
-  const linter = new CLIEngine({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
+  const linter = new CLIEngine({
+    configFile: path.join(__dirname, '..', 'src', 'index.js'),
+    ignore: false
+  });
 
   it('should not generate any violation for correct code', () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');

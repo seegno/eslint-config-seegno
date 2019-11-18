@@ -30,16 +30,11 @@
     "lint-staged"
   ],
   "lint-staged": {
-    "ignore": [
-      "test/fixtures/*.js"
-    ],
-    "linters": {
-      "**/*.js": "eslint",
-      "package.json": [
-        "sort-package-json",
-        "git add"
-      ]
-    }
+    "**/*.js": "eslint",
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
   },
   "dependencies": {
     "babel-eslint": "10.0.1",
@@ -57,7 +52,7 @@
   },
   "devDependencies": {
     "eslint": "6.5.1",
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^9.4.2",
     "mocha": "6.0.2",
     "pre-commit": "^1.2.2",
     "should": "13.2.3",
