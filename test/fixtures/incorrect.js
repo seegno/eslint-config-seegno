@@ -1,3 +1,5 @@
+// @flow
+
 // Avoid extra `no-unused-vars` violations.
 function noop() {
   // Do nothing
@@ -54,6 +56,18 @@ if (curly)
 const dotNotation = {};
 
 dotNotation['foo'] = 'bar';
+
+// `flowtype/delimiter-dangle`
+type DelimiterDangleType = {
+  bar: string,
+};
+
+interface DelimiterDangleInterface {
+  bar: string
+}
+
+noop(DelimiterDangleType);
+noop(DelimiterDangleInterface);
 
 // `generator-star-spacing`
 noop(function* () {});

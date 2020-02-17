@@ -1,3 +1,4 @@
+// @flow
 // `jasmine`, `jest` and `mocha` envs.
 
 /* eslint-disable jest/no-disabled-tests */
@@ -94,6 +95,18 @@ if (mixedRules) {
 const dotNotation = {};
 
 dotNotation.foo = 'bar';
+
+// `flowtype/delimiter-dangle`
+type DelimiterDangleType = {
+  bar: string
+};
+
+interface DelimiterDangleInterface {
+  bar: string;
+}
+
+noop(DelimiterDangleType);
+noop(DelimiterDangleInterface);
 
 // `generator-star-spacing`
 noop(function *() {});
