@@ -56,7 +56,7 @@ module.exports = {
     eqeqeq: ['error', 'smart'],
     'flowtype/boolean-style': 'error',
     'flowtype/define-flow-type': 'error',
-    'flowtype/delimiter-dangle': 'error',
+    'flowtype/delimiter-dangle': ['error', 'never', 'always'],
     'flowtype/generic-spacing': 'error',
     'flowtype/no-dupe-keys': 'error',
     'flowtype/require-valid-file-annotation': ['error', 'always'],
