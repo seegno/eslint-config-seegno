@@ -58,6 +58,16 @@ noop(() => 'bar');
 noop(foo => foo);
 noop((foo, bar) => [foo, bar]);
 
+// `babel/no-unused-expressions`
+
+const bin = { bar: noop };
+
+bin?.bar();
+
+const bar = 0;
+
+delete bar.biz;
+
 // `brace-style`.
 try {
   noop();
