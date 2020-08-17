@@ -1,5 +1,18 @@
 # Changelog
 
+## [v16.0.0](https://github.com/seegno/eslint-config-seegno/tree/v16.0.0) (2020-08-17)
+[Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v15.0.0...v16.0.0)
+
+**Merged pull requests:**
+
+- Bump lodash from 4.17.15 to 4.17.20 [\#112](https://github.com/seegno/eslint-config-seegno/pull/112) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump acorn from 7.1.0 to 7.1.1 [\#109](https://github.com/seegno/eslint-config-seegno/pull/109) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update flowtype/delimiter-dangle rule [\#108](https://github.com/seegno/eslint-config-seegno/pull/108) ([bsonntag](https://github.com/bsonntag))
+- Bump lodash from 4.17.11 to 4.17.15 [\#106](https://github.com/seegno/eslint-config-seegno/pull/106) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump mixin-deep from 1.3.1 to 1.3.2 [\#105](https://github.com/seegno/eslint-config-seegno/pull/105) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump eslint-utils from 1.3.1 to 1.4.3 [\#104](https://github.com/seegno/eslint-config-seegno/pull/104) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Fix react/jsx-curly-brace-presence rule [\#102](https://github.com/seegno/eslint-config-seegno/pull/102) ([bsonntag](https://github.com/bsonntag))
+
 ## [v15.0.0](https://github.com/seegno/eslint-config-seegno/tree/v15.0.0) (2019-04-16)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v14.0.0...v15.0.0)
 
@@ -31,6 +44,7 @@
 
 **Merged pull requests:**
 
+- Add support for eslint v6 [\#103](https://github.com/seegno/eslint-config-seegno/pull/103) ([bsonntag](https://github.com/bsonntag))
 - Add react class element order rules [\#92](https://github.com/seegno/eslint-config-seegno/pull/92) ([jmacedoit](https://github.com/jmacedoit))
 
 ## [v11.0.1](https://github.com/seegno/eslint-config-seegno/tree/v11.0.1) (2018-10-09)
@@ -66,6 +80,7 @@
 - Update eslint to version v4.7.2 [\#77](https://github.com/seegno/eslint-config-seegno/pull/77) ([nunorafaelrocha](https://github.com/nunorafaelrocha))
 - Enable `require-await` rule [\#75](https://github.com/seegno/eslint-config-seegno/pull/75) ([ricardogama](https://github.com/ricardogama))
 - Add jasmine and jest environments [\#72](https://github.com/seegno/eslint-config-seegno/pull/72) ([ricardogama](https://github.com/ricardogama))
+- Replace sorting plugin with sort keys [\#70](https://github.com/seegno/eslint-config-seegno/pull/70) ([nunofgs](https://github.com/nunofgs))
 - Add `capitalized-comments` rule [\#67](https://github.com/seegno/eslint-config-seegno/pull/67) ([rplopes](https://github.com/rplopes))
 
 ## [v9.0.0](https://github.com/seegno/eslint-config-seegno/tree/v9.0.0) (2017-03-07)
@@ -73,7 +88,6 @@
 
 **Merged pull requests:**
 
-- Replace sorting plugin with sort keys [\#70](https://github.com/seegno/eslint-config-seegno/pull/70) ([nunofgs](https://github.com/nunofgs))
 - Add missing rules and improve tests [\#69](https://github.com/seegno/eslint-config-seegno/pull/69) ([nunofgs](https://github.com/nunofgs))
 - Enforce the newline-before-return rule [\#68](https://github.com/seegno/eslint-config-seegno/pull/68) ([filipefigcorreia](https://github.com/filipefigcorreia))
 
@@ -142,14 +156,11 @@
 - Use string for severity in config [\#30](https://github.com/seegno/eslint-config-seegno/pull/30) ([ruimarinho](https://github.com/ruimarinho))
 - Disable complexity rule [\#29](https://github.com/seegno/eslint-config-seegno/pull/29) ([ruimarinho](https://github.com/ruimarinho))
 - Disable max-nested-callbacks rule [\#28](https://github.com/seegno/eslint-config-seegno/pull/28) ([ruimarinho](https://github.com/ruimarinho))
+- Update rules to support eslint 2.x.x [\#27](https://github.com/seegno/eslint-config-seegno/pull/27) ([ruiquelhas](https://github.com/ruiquelhas))
 - Require arrow parentheses as needed [\#26](https://github.com/seegno/eslint-config-seegno/pull/26) ([ruimarinho](https://github.com/ruimarinho))
 
 ## [v3.0.0](https://github.com/seegno/eslint-config-seegno/tree/v3.0.0) (2016-03-06)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v2.0.0...v3.0.0)
-
-**Merged pull requests:**
-
-- Update rules to support eslint 2.x.x [\#27](https://github.com/seegno/eslint-config-seegno/pull/27) ([ruiquelhas](https://github.com/ruiquelhas))
 
 ## [v2.0.0](https://github.com/seegno/eslint-config-seegno/tree/v2.0.0) (2016-02-03)
 [Full Changelog](https://github.com/seegno/eslint-config-seegno/compare/v1.2.1...v2.0.0)
