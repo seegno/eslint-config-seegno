@@ -237,6 +237,19 @@ class NoUnderscoreDangle {
 
 noop(new NoUnderscoreDangle());
 
+// `babel/no-unused-expressions`
+const bin = true;
+
+if (bin) {
+  0;
+}
+
+0;
+
+bin ? noop() : 0;
+
+true && noop();
+
 // `no-unused-vars`.
 const foobar = '';
 

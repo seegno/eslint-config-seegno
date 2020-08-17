@@ -14,6 +14,7 @@ module.exports = {
   extends: ['eslint:recommended'],
   parser: 'babel-eslint',
   plugins: [
+    'babel',
     'flowtype',
     'jest',
     'mocha',
@@ -32,6 +33,7 @@ module.exports = {
     'array-bracket-spacing': 'error',
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',
+    'babel/no-unused-expressions': 'error',
     'block-scoped-var': 'error',
     'block-spacing': 'off',
     'brace-style': ['error', '1tbs', {
@@ -160,7 +162,7 @@ module.exports = {
     'no-underscore-dangle': 'error',
     'no-unexpected-multiline': 'error',
     'no-unneeded-ternary': 'error',
-    'no-unused-expressions': 'error',
+    'no-unused-expressions': 'off',
     'no-use-before-define': 'error',
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
