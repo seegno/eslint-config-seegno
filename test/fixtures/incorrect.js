@@ -96,10 +96,6 @@ xtest('should not allow disable tests with `xtest`', () => {});
 it('should not allow disable tests with `it`');
 test('should not allow disable tests with `test`');
 
-it('should not allow disable tests with `pending`', () => {
-  pending();
-});
-
 // `jest/no-focused-tests` and `mocha/no-exclusive-tests`.
 describe.only('should not allow `describe.only`', () => {});
 it.only('should not allow `it.only`', () => {});
