@@ -65,7 +65,9 @@ try {
   noop();
 }
 
-noop(function *() { return yield noop(); });
+noop(function* () {
+  return yield noop();
+});
 
 // `capitalized-comments`.
 
@@ -109,8 +111,8 @@ noop(DelimiterDangleType);
 noop(DelimiterDangleInterface);
 
 // `generator-star-spacing`
-noop(function *() {});
-noop(function *foo() {});
+noop(function* () {});
+noop(function* foo() {});
 noop({ *foo() {} });
 
 // `id-match`.
@@ -159,7 +161,7 @@ function funcThatReturns(bar) {
 funcThatReturns('foo');
 
 // `no-class-assign`.
-class NoClassAssign { }
+class NoClassAssign {}
 
 noop(NoClassAssign);
 
@@ -179,7 +181,6 @@ if (noConstantCondition) {
 
 // `no-dupe-class-members`.
 class NoDupeClassMembers {
-
   bar() {
     return 'bar';
   }
@@ -187,7 +188,6 @@ class NoDupeClassMembers {
   foo() {
     return 'foo';
   }
-
 }
 
 noop(NoDupeClassMembers);
@@ -217,12 +217,10 @@ noop();
 const NoThisBeforeSuper = require('no-this-before-super');
 
 class Child extends NoThisBeforeSuper {
-
   constructor() {
     super();
     this.foo = 'bar';
   }
-
 }
 
 noop(Child);
@@ -260,13 +258,12 @@ noop(operatorLineBreak);
 
 // `padded-blocks`.
 class PaddedBlocks {
-
   constructor() {
     switch (true) {
-      default: noop();
+      default:
+        noop();
     }
   }
-
 }
 
 noop(new PaddedBlocks());
@@ -332,7 +329,7 @@ const sortObjectProps = {
 noop(sortObjectProps);
 
 // `space-before-function-paren`.
-(function() {
+(function () {
   noop();
 })();
 
@@ -377,11 +374,6 @@ switch (true) {
 const templateCurlySpacing = 'foo';
 
 noop(`${templateCurlySpacing}`);
-
-// `wrap-iife`.
-(function() {
-  noop();
-})();
 
 // `sort-destructure-keys/sort-destructure-keys`.
 const props = { KeyA: 1, keyA: 2, keyB: 3, keyZ: 4 };
@@ -430,39 +422,29 @@ function useHook() {
 noop(RulesOfHooks, useHook);
 
 // `react/jsx-curly-brace-presence`.
-const CurlyBracePresence = () => (
-  <div foo={'bar'} />
-);
+const CurlyBracePresence = () => <div foo={'bar'} />;
 
 noop(CurlyBracePresence);
 
 // `react/jsx-no-literals`.
-const NoLiterals = () => (
-  <div>
-    {'qux'}
-  </div>
-);
+const NoLiterals = () => <div>{'qux'}</div>;
 
 noop(NoLiterals);
 
 // `react/jsx-tag-spacing`.
-const TagSpacing = () => (
-  <div />
-);
+const TagSpacing = () => <div />;
 
 noop(TagSpacing);
 
 // `react/prefer-stateless-function`.
 class PreferStatelessFunction extends React.Component {
-
   getFoo = () => {
     return 'foo';
-  }
+  };
 
   render() {
     return this.getFoo();
   }
-
 }
 
 noop(PreferStatelessFunction);

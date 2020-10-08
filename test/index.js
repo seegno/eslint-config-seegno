@@ -12,7 +12,9 @@ const path = require('path');
  */
 
 describe('eslint-config-seegno', () => {
-  const linter = new CLIEngine({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
+  const linter = new CLIEngine({
+    configFile: path.join(__dirname, '..', 'src', 'index.js')
+  });
 
   it('should not generate any violation for correct code', () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');
@@ -23,38 +25,44 @@ describe('eslint-config-seegno', () => {
   it('should generate violations for environment-specific rules', () => {
     const source = path.join(__dirname, 'fixtures', 'environment.js');
 
-    Array.from(linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId)).should.eql([
-      'linebreak-style',
-      'linebreak-style',
-      'linebreak-style',
-      'linebreak-style',
-      'eol-last'
+    Array.from(
+      linter
+        .executeOnFiles([source])
+        .results[0].messages.map(violation => violation.ruleId)
+    ).should.eql([
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier'
     ]);
   });
 
   it('should generate violations for incorrect code', () => {
     const source = path.join(__dirname, 'fixtures', 'incorrect.js');
 
-    Array.from(linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId)).should.eql([
-      'array-bracket-spacing',
-      'arrow-parens',
-      'brace-style',
+    Array.from(
+      linter
+        .executeOnFiles([source])
+        .results[0].messages.map(violation => violation.ruleId)
+    ).should.eql([
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'capitalized-comments',
-      'comma-dangle',
-      'comma-spacing',
-      'comma-style',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'consistent-this',
       'curly',
+      'prettier/prettier',
       'dot-notation',
-      'flowtype/delimiter-dangle',
-      'flowtype/delimiter-dangle',
-      'generator-star-spacing',
-      'generator-star-spacing',
-      'generator-star-spacing',
-      'generator-star-spacing',
-      'generator-star-spacing',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'id-match',
-      'indent',
+      'prettier/prettier',
       'jest/no-disabled-tests',
       'jest/no-disabled-tests',
       'jest/no-disabled-tests',
@@ -66,71 +74,73 @@ describe('eslint-config-seegno', () => {
       'jest/no-disabled-tests',
       'jest/no-focused-tests',
       'mocha/no-exclusive-tests',
-      'mocha/no-exclusive-tests',
       'jest/no-focused-tests',
+      'mocha/no-exclusive-tests',
       'jest/no-focused-tests',
       'mocha/no-exclusive-tests',
       'jest/no-focused-tests',
       'jest/no-focused-tests',
       'jest/no-identical-title',
-      'key-spacing',
-      'keyword-spacing',
+      'prettier/prettier',
+      'prettier/prettier',
       'no-new',
       'new-cap',
       'new-with-error/new-with-error',
       'newline-before-return',
+      'prettier/prettier',
       'no-class-assign',
       'no-console',
       'no-const-assign',
       'no-constant-condition',
+      'prettier/prettier',
       'no-dupe-class-members',
+      'prettier/prettier',
       'no-empty',
       'no-labels',
       'no-labels',
-      'no-multi-spaces',
+      'prettier/prettier',
       'no-multi-str',
-      'no-multiple-empty-lines',
-      'no-spaced-func',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'no-this-before-super',
+      'prettier/prettier',
       'no-undef',
+      'prettier/prettier',
       'no-underscore-dangle',
+      'prettier/prettier',
       'no-unused-vars',
-      'object-curly-spacing',
-      'object-curly-spacing',
+      'prettier/prettier',
       'one-var',
-      'one-var-declaration-per-line',
-      'operator-linebreak',
-      'padded-blocks',
-      'padded-blocks',
-      'padded-blocks',
-      'padded-blocks',
-      'padded-blocks',
-      'padded-blocks',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'padding-line-between-statements',
-      'quote-props',
-      'quote-props',
-      'quote-props',
-      'quote-props',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'quotes',
-      'semi',
-      'semi-spacing',
-      'semi-spacing',
+      'prettier/prettier',
+      'prettier/prettier',
       'sort-imports-es6/sort-imports-es6',
       'sort-keys',
-      'space-before-blocks',
-      'space-before-function-paren',
-      'space-in-parens',
-      'space-in-parens',
-      'space-infix-ops',
-      'space-unary-ops',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'spaced-comment',
       'sql-template/no-unsafe-query',
       'switch-case/newline-between-switch-case',
       'no-fallthrough',
       'switch-case/newline-between-switch-case',
-      'template-curly-spacing',
-      'template-curly-spacing',
-      'wrap-iife',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
       'sort-destructure-keys/sort-destructure-keys',
       'yoda',
       'react-hooks/exhaustive-deps',
@@ -142,14 +152,17 @@ describe('eslint-config-seegno', () => {
       'react-hooks/rules-of-hooks',
       'react-hooks/rules-of-hooks',
       'react-hooks/rules-of-hooks',
+      'prettier/prettier',
       'react/jsx-curly-brace-presence',
+      'prettier/prettier',
       'react/jsx-no-literals',
-      'react/jsx-tag-spacing',
-      'react/jsx-tag-spacing',
-      'react/jsx-tag-spacing',
-      'react/jsx-tag-spacing',
-      'react/jsx-tag-spacing',
-      'react/prefer-stateless-function'
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'prettier/prettier',
+      'react/prefer-stateless-function',
+      'prettier/prettier',
+      'prettier/prettier'
     ]);
   });
 });
