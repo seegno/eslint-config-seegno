@@ -7,6 +7,54 @@
 const CLIEngine = require('eslint').CLIEngine;
 const path = require('path');
 
+/*
+ * Violations count.
+ */
+
+const violationsCount = {
+  'capitalized-comments': 1,
+  'consistent-this': 1,
+  curly: 1,
+  'dot-notation': 1,
+  'id-match': 1,
+  'jest/no-disabled-tests': 8,
+  'jest/no-focused-tests': 5,
+  'jest/no-identical-title': 1,
+  'new-cap': 1,
+  'new-with-error/new-with-error': 1,
+  'newline-before-return': 1,
+  'no-class-assign': 1,
+  'no-console': 1,
+  'no-const-assign': 1,
+  'no-constant-condition': 1,
+  'no-dupe-class-members': 1,
+  'no-empty': 1,
+  'no-fallthrough': 1,
+  'no-labels': 2,
+  'no-multi-str': 1,
+  'no-new': 1,
+  'no-this-before-super': 1,
+  'no-undef': 1,
+  'no-underscore-dangle': 1,
+  'no-unused-vars': 1,
+  'one-var': 1,
+  'padding-line-between-statements': 1,
+  'prettier/prettier': 53,
+  quotes: 1,
+  'react/jsx-curly-brace-presence': 1,
+  'react/jsx-no-literals': 1,
+  'react/prefer-stateless-function': 1,
+  'react-hooks/exhaustive-deps': 5,
+  'react-hooks/rules-of-hooks': 4,
+  'sort-destructure-keys/sort-destructure-keys': 1,
+  'sort-imports-es6/sort-imports-es6': 1,
+  'sort-keys': 1,
+  'spaced-comment': 1,
+  'sql-template/no-unsafe-query': 1,
+  'switch-case/newline-between-switch-case': 2,
+  yoda: 1
+};
+
 /**
  * Tests for `eslint-config-seegno`.
  */
@@ -18,18 +66,18 @@ describe('eslint-config-seegno', () => {
 
   it('should not generate any violation for correct code', () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');
+    const results = linter.executeOnFiles([source]);
 
-    linter.executeOnFiles([source]).errorCount.should.equal(0);
+    expect(results.errorCount).toEqual(0);
   });
 
   it('should generate violations for environment-specific rules', () => {
     const source = path.join(__dirname, 'fixtures', 'environment.js');
+    const violations = linter
+      .executeOnFiles([source])
+      .results[0].messages.map(violation => violation.ruleId);
 
-    Array.from(
-      linter
-        .executeOnFiles([source])
-        .results[0].messages.map(violation => violation.ruleId)
-    ).should.eql([
+    expect(violations).toEqual([
       'prettier/prettier',
       'prettier/prettier',
       'prettier/prettier',
@@ -40,129 +88,14 @@ describe('eslint-config-seegno', () => {
 
   it('should generate violations for incorrect code', () => {
     const source = path.join(__dirname, 'fixtures', 'incorrect.js');
+    const violations = linter
+      .executeOnFiles([source])
+      .results[0].messages.map(violation => violation.ruleId);
 
-    Array.from(
-      linter
-        .executeOnFiles([source])
-        .results[0].messages.map(violation => violation.ruleId)
-    ).should.eql([
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'capitalized-comments',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'consistent-this',
-      'curly',
-      'prettier/prettier',
-      'dot-notation',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'id-match',
-      'prettier/prettier',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-disabled-tests',
-      'jest/no-focused-tests',
-      'mocha/no-exclusive-tests',
-      'jest/no-focused-tests',
-      'mocha/no-exclusive-tests',
-      'jest/no-focused-tests',
-      'mocha/no-exclusive-tests',
-      'jest/no-focused-tests',
-      'jest/no-focused-tests',
-      'jest/no-identical-title',
-      'prettier/prettier',
-      'prettier/prettier',
-      'no-new',
-      'new-cap',
-      'new-with-error/new-with-error',
-      'newline-before-return',
-      'prettier/prettier',
-      'no-class-assign',
-      'no-console',
-      'no-const-assign',
-      'no-constant-condition',
-      'prettier/prettier',
-      'no-dupe-class-members',
-      'prettier/prettier',
-      'no-empty',
-      'no-labels',
-      'no-labels',
-      'prettier/prettier',
-      'no-multi-str',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'no-this-before-super',
-      'prettier/prettier',
-      'no-undef',
-      'prettier/prettier',
-      'no-underscore-dangle',
-      'prettier/prettier',
-      'no-unused-vars',
-      'prettier/prettier',
-      'one-var',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'padding-line-between-statements',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'quotes',
-      'prettier/prettier',
-      'prettier/prettier',
-      'sort-imports-es6/sort-imports-es6',
-      'sort-keys',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'spaced-comment',
-      'sql-template/no-unsafe-query',
-      'switch-case/newline-between-switch-case',
-      'no-fallthrough',
-      'switch-case/newline-between-switch-case',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'sort-destructure-keys/sort-destructure-keys',
-      'yoda',
-      'react-hooks/exhaustive-deps',
-      'react-hooks/exhaustive-deps',
-      'react-hooks/exhaustive-deps',
-      'react-hooks/exhaustive-deps',
-      'react-hooks/exhaustive-deps',
-      'react-hooks/rules-of-hooks',
-      'react-hooks/rules-of-hooks',
-      'react-hooks/rules-of-hooks',
-      'react-hooks/rules-of-hooks',
-      'prettier/prettier',
-      'react/jsx-curly-brace-presence',
-      'prettier/prettier',
-      'react/jsx-no-literals',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'prettier/prettier',
-      'react/prefer-stateless-function',
-      'prettier/prettier',
-      'prettier/prettier'
-    ]);
+    Object.keys(violationsCount).forEach(rule => {
+      expect(violations.filter(violation => violation === rule).length).toEqual(
+        violationsCount[rule]
+      );
+    });
   });
 });

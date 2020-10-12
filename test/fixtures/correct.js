@@ -1,43 +1,23 @@
 // @flow
-// `jasmine`, `jest` and `mocha` envs.
+// `jasmine`, `jest` envs.
 
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/no-focused-tests */
-after();
 afterAll();
 afterEach();
-before();
 beforeAll();
 beforeEach();
-context();
 describe();
 expect();
-fail();
 fdescribe();
 fit();
 it();
-jasmine();
 jest();
-mocha();
-pending();
 pit();
 require();
-run();
-runs();
-setup();
-specify();
-spyOn();
-suite();
-suiteSetup();
-suiteTeardown();
-teardown();
 test();
-waits();
-waitsFor();
-xcontext();
 xdescribe();
 xit();
-xspecify();
 xtest();
 /* eslint-enable jest/no-disabled-tests */
 /* eslint-enable jest/no-focused-tests */
@@ -134,7 +114,7 @@ noop(ID_M_ATCH);
 noop(__dirname);
 noop(`${__dirname}`);
 
-// `jest/no-disabled-tests` and `mocha/no-exclusive-tests`.
+// `jest/no-disabled-tests`.
 describe('noExclusiveTests', () => {
   it('should work with `it`', () => {});
   test('should work with `test`', () => {});
