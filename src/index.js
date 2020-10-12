@@ -1,4 +1,3 @@
-
 /**
  * Export `seegno` shared configuration preset.
  */
@@ -11,7 +10,7 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: ['eslint:recommended'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parser: 'babel-eslint',
   plugins: [
     'flowtype',
@@ -24,77 +23,64 @@ module.exports = {
     'sort-destructure-keys',
     'sort-imports-es6',
     'sql-template',
-    'switch-case'
+    'switch-case',
+    'prettier'
   ],
   root: true,
   rules: {
     'accessor-pairs': 'error',
-    'array-bracket-spacing': 'error',
-    'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': 'error',
     'block-scoped-var': 'error',
-    'block-spacing': 'off',
-    'brace-style': ['error', '1tbs', {
-      allowSingleLine: true
-    }],
     camelcase: 'off',
-    'capitalized-comments': ['error', 'always', {
-      ignoreConsecutiveComments: true
-    }],
-    'comma-dangle': 'error',
-    'comma-spacing': 'error',
-    'comma-style': 'error',
+    'capitalized-comments': [
+      'error',
+      'always',
+      {
+        ignoreConsecutiveComments: true
+      }
+    ],
     complexity: 'off',
-    'computed-property-spacing': 'error',
     'consistent-return': 'off',
     'consistent-this': ['error', 'self'],
     curly: 'error',
     'default-case': 'error',
-    'dot-location': ['error', 'property'],
     'dot-notation': 'error',
-    'eol-last': 'error',
     eqeqeq: ['error', 'smart'],
-    'flowtype/boolean-style': 'error',
     'flowtype/define-flow-type': 'error',
-    'flowtype/delimiter-dangle': ['error', 'never', 'always'],
-    'flowtype/generic-spacing': 'error',
     'flowtype/no-dupe-keys': 'error',
     'flowtype/require-valid-file-annotation': ['error', 'always'],
-    'flowtype/semi': 'error',
     'flowtype/sort-keys': 'error',
-    'flowtype/space-after-type-colon': 'error',
-    'flowtype/space-before-generic-bracket': 'error',
-    'flowtype/union-intersection-spacing': 'error',
     'flowtype/use-flow-type': 'error',
     'func-names': 'off',
-    'func-style': ['error', 'declaration', {
-      allowArrowFunctions: true
-    }],
-    'generator-star-spacing': ['error', 'before'],
-    'id-length': ['error', {
-      exceptions: ['_', 'e', 'i']
-    }],
-    'id-match': ['error', '^_$|^[a-zA-Z][a-zA-Z0-9]*$|^[A-Z][_A-Z0-9]+[A-Z0-9]$', {
-      onlyDeclarations: true,
-      properties: true
-    }],
-    indent: ['error', 2, {
-      SwitchCase: 1
-    }],
+    'func-style': [
+      'error',
+      'declaration',
+      {
+        allowArrowFunctions: true
+      }
+    ],
+    'id-length': [
+      'error',
+      {
+        exceptions: ['_', 'e', 'i']
+      }
+    ],
+    'id-match': [
+      'error',
+      '^_$|^[a-zA-Z][a-zA-Z0-9]*$|^[A-Z][_A-Z0-9]+[A-Z0-9]$',
+      {
+        onlyDeclarations: true,
+        properties: true
+      }
+    ],
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
-    'jsx-quotes': ['error', 'prefer-single'],
-    'key-spacing': 'error',
-    'keyword-spacing': 'error',
-    'linebreak-style': 'error',
     'lines-around-comment': 'off',
     'max-depth': 'error',
     'max-nested-callbacks': 'off',
     'max-params': ['error', 4],
     'mocha/no-exclusive-tests': 'error',
     'new-cap': 'error',
-    'new-parens': 'error',
     'new-with-error/new-with-error': 'error',
     'newline-before-return': 'error',
     'no-alert': 'error',
@@ -114,10 +100,6 @@ module.exports = {
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
-    'no-extra-parens': ['error', 'all', {
-      ignoreJSX: 'all'
-    }],
-    'no-floating-decimal': 'error',
     'no-implied-eval': 'error',
     'no-inline-comments': 'error',
     'no-iterator': 'error',
@@ -127,11 +109,7 @@ module.exports = {
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
     'no-mixed-requires': 'error',
-    'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-multiple-empty-lines': ['error', {
-      max: 1
-    }],
     'no-native-reassign': 'error',
     'no-nested-ternary': 'error',
     'no-new': 'error',
@@ -151,10 +129,8 @@ module.exports = {
     'no-sequences': 'error',
     'no-shadow': 'off',
     'no-shadow-restricted-names': 'error',
-    'no-spaced-func': 'error',
     'no-sync': 'error',
     'no-throw-literal': 'error',
-    'no-trailing-spaces': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-underscore-dangle': 'error',
@@ -168,52 +144,58 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'off',
     'no-with': 'error',
-    'object-curly-spacing': ['error', 'always'],
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
-    'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': 'error',
-    'operator-linebreak': ['error', 'none'],
-    'padded-blocks': ['error', { blocks: 'never', classes: 'always', switches: 'never' }],
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', next: '*', prev: ['const', 'let', 'var'] },
-      { blankLine: 'any', next: ['const', 'let', 'var'], prev: ['const', 'let', 'var'] }
+      {
+        blankLine: 'any',
+        next: ['const', 'let', 'var'],
+        prev: ['const', 'let', 'var']
+      }
     ],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'as-needed'],
-    quotes: ['error', 'single', {
-      allowTemplateLiterals: true
-    }],
+    'prettier/prettier': [
+      'warn',
+      {
+        arrowParens: 'avoid',
+        jsxSingleQuote: true,
+        semi: true,
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: 'none'
+      }
+    ],
+    quotes: [
+      'error',
+      'single',
+      {
+        allowTemplateLiterals: true,
+        avoidEscape: true
+      }
+    ],
     radix: 'error',
     'react/display-name': 'error',
     'react/jsx-boolean-value': 'error',
-    'react/jsx-closing-bracket-location': 'error',
-    'react/jsx-curly-brace-presence': ['error', {
-      children: 'ignore',
-      props: 'always'
-    }],
-    'react/jsx-curly-spacing': 'error',
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-curly-brace-presence': [
+      'error',
+      {
+        children: 'ignore',
+        props: 'always'
+      }
+    ],
     'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
-    'react/jsx-tag-spacing': ['error', {
-      afterOpening: 'never',
-      beforeClosing: 'never',
-      beforeSelfClosing: 'always',
-      closingSlash: 'never'
-    }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'react/jsx-wrap-multilines': 'error',
     'react/no-danger': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-string-refs': 'error',
@@ -222,83 +204,94 @@ module.exports = {
     'react/prefer-stateless-function': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': ['error', {
-      groups: {
-        initialization: [
-          'displayName',
-          'propTypes',
-          'contextTypes',
-          'childContextTypes',
-          'mixins',
-          'statics',
-          'defaultProps',
-          'constructor',
-          'getDefaultProps',
-          'state',
-          'getInitialState',
-          'getChildContext'
-        ],
-        lifecycle: [
-          'componentWillMount',
-          'UNSAFE_componentWillMount',
-          'componentDidMount',
-          'componentWillReceiveProps',
-          'UNSAFE_componentWillReceiveProps',
-          'shouldComponentUpdate',
-          'componentWillUpdate',
-          'UNSAFE_componentWillUpdate',
-          'getSnapshotBeforeUpdate',
-          'componentDidUpdate',
-          'componentDidCatch',
-          'componentWillUnmount'
+    'react/sort-comp': [
+      'error',
+      {
+        groups: {
+          initialization: [
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'mixins',
+            'statics',
+            'defaultProps',
+            'constructor',
+            'getDefaultProps',
+            'state',
+            'getInitialState',
+            'getChildContext'
+          ],
+          lifecycle: [
+            'componentWillMount',
+            'UNSAFE_componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'UNSAFE_componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'UNSAFE_componentWillUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount'
+          ]
+        },
+        order: [
+          'static-methods',
+          'initialization',
+          'everything-else',
+          '/^handle.+$/',
+          'lifecycle',
+          '/^render.+$/',
+          'render'
         ]
-      },
-      order: [
-        'static-methods',
-        'initialization',
-        'everything-else',
-        '/^handle.+$/',
-        'lifecycle',
-        '/^render.+$/',
-        'render'
-      ]
-    }],
+      }
+    ],
     'react/sort-prop-types': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'require-await': 'error',
     'require-yield': 'error',
-    semi: 'error',
-    'semi-spacing': 'error',
-    'sort-destructure-keys/sort-destructure-keys': ['error', {
-      caseSensitive: true
-    }],
-    'sort-imports-es6/sort-imports-es6': ['error', {
-      ignoreCase: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
-    }],
-    'sort-keys': ['error', 'asc', {
-      natural: true
-    }],
-    'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', { anonymous: 'never', named: 'never' }],
-    'space-in-parens': 'error',
-    'space-infix-ops': 'error',
-    'space-unary-ops': 'error',
+    'sort-destructure-keys/sort-destructure-keys': [
+      'error',
+      {
+        caseSensitive: true
+      }
+    ],
+    'sort-imports-es6/sort-imports-es6': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+      }
+    ],
+    'sort-keys': [
+      'error',
+      'asc',
+      {
+        natural: true
+      }
+    ],
     'spaced-comment': 'error',
     'sql-template/no-unsafe-query': 'error',
     strict: 'off',
-    'switch-case/newline-between-switch-case': ['error', 'always', { fallthrough: 'never' }],
-    'template-curly-spacing': 'error',
+    'switch-case/newline-between-switch-case': [
+      'error',
+      'always',
+      { fallthrough: 'never' }
+    ],
     'valid-jsdoc': 'error',
     'vars-on-top': 'error',
-    'wrap-iife': ['error', 'inside'],
     yoda: 'error'
   },
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: true
+    },
+    react: {
+      version: 'detect'
     }
   }
 };
