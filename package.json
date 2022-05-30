@@ -23,7 +23,7 @@
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
     "lint": "eslint src/index.js test/index.js",
     "lint-staged": "lint-staged",
-    "test": "mocha $npm_package_options_mocha",
+    "test": "jest",
     "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
   },
   "pre-commit": [
@@ -41,6 +41,9 @@
       ]
     }
   },
+  "jest": {
+    "testRegex": "test/index.js"
+  },
   "dependencies": {
     "babel-eslint": "10.0.1",
     "eslint-plugin-flowtype": "3.13.0",
@@ -57,10 +60,9 @@
   },
   "devDependencies": {
     "eslint": "6.5.1",
+    "jest": "^28.1.0",
     "lint-staged": "^8.1.5",
-    "mocha": "6.0.2",
     "pre-commit": "^1.2.2",
-    "should": "13.2.3",
     "sort-package-json": "^1.22.1"
   },
   "peerDependencies": {
@@ -68,8 +70,5 @@
   },
   "engines": {
     "node": ">=8"
-  },
-  "options": {
-    "mocha": "-t 10000 --require should test"
   }
 }
