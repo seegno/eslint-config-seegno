@@ -6,9 +6,7 @@
 module.exports = {
   env: {
     es6: true,
-    jasmine: true,
     jest: true,
-    mocha: true,
     node: true
   },
   extends: ['eslint:recommended'],
@@ -16,7 +14,6 @@ module.exports = {
   plugins: [
     'flowtype',
     'jest',
-    'mocha',
     'new-with-error',
     'react-hooks',
     'react',
@@ -92,7 +89,6 @@ module.exports = {
     'max-depth': 'error',
     'max-nested-callbacks': 'off',
     'max-params': ['error', 4],
-    'mocha/no-exclusive-tests': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
     'new-with-error/new-with-error': 'error',
