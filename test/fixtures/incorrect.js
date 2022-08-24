@@ -240,6 +240,10 @@ noop(new NoUnderscoreDangle());
 // `no-unused-vars`.
 const foobar = '';
 
+for (const unusedForVar of noop()) {
+  noop();
+}
+
 // `object-curly-spacing`.
 const objectCurlySpacing = {foo: 'bar'};
 

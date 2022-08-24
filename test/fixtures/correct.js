@@ -227,6 +227,12 @@ class Child extends NoThisBeforeSuper {
 
 noop(Child);
 
+// `no-unused-vars`.
+
+for (const usedVar of noop()) {
+  noop(usedVar);
+}
+
 // `no-warning-comments`.
 
 // TODO: do something.
